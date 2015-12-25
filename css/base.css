@@ -1,0 +1,44 @@
+body {
+  font-family: Helvetica;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding: 15px;
+}
+
+nav > a {
+  margin: 10px;
+}
+
+main {
+  flex-grow: 5;
+  flex-shrink: 5;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 600px;
+}
+
+section > p {
+  max-width: 550px;
+}
+
+#container {
+  display: flex;
+  flex-direction: row;
+  min-height: 600px;
+}
+
+/* Too narrow to support three columns */
+@media all and (max-width: 640px) {
+
+}
