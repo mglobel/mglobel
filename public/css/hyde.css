@@ -99,6 +99,32 @@ a.sidebar-nav-item:focus {
   font-weight: bold;
 }
 
+/* Social Section */
+.social {
+  display: flex;
+  justify-content: row;
+}
+
+.social-links {
+  display: block;
+  padding-top: 8px;
+  padding-left: 15px;
+  font-size: 16px;
+}
+
+#gravatar {
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
+
+.icon > svg {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+}
+
 /* Sticky sidebar
  *
  * Add the `sidebar-sticky` class to the sidebar's container to affix it the
@@ -109,7 +135,7 @@ a.sidebar-nav-item:focus {
   .sidebar-sticky {
     position: absolute;
     right:  1rem;
-    bottom: 6rem;
+    top: 6rem;
     left:   1rem;
   }
 }
