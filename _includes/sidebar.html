@@ -3,6 +3,7 @@
     <div class="social">
       <img id="gravatar" src="http://www.gravatar.com/avatar/3a6cee3dc14aa0f4013fcb5f28e73abe" />
       <div class="social-links">
+        <a href="mailto:mglobel@gmail.com">mglobel@gmail.com</a>
         <a href="https://github.com/{{ site.github_username }}">
           <div class="icon  icon--github">
             <svg viewBox="0 0 16 16">
@@ -11,7 +12,6 @@
             <span class="username">{{ site.github_username }}</span>
           </div>
         </a>
-
         <a href="https://twitter.com/{{ site.twitter_username }}">
           <div class="icon  icon--twitter">
             <svg viewBox="0 0 16 16">
@@ -39,8 +39,6 @@
       {% endfor %}
     </nav>
     <p>
-      Currently v{{ site.version }}
-      <br />
       &copy;{{ site.time | date: '%Y' }}. All rights reserved.
     </p>
     <span></span>

@@ -3,28 +3,23 @@ layout: page
 title: About
 ---
 
-<p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
-</p>
+Michael Lobel is a freelance adventurer, focused on solving problems and seeing new things*. Born in Houston,TX, raised in Potomac, MD, and educated in Chicago, IL, his background is in organizational leadership, creative problem-solving, and efficiency-driven technology. In a nutshell, he likes to help people and organizations improve themselves through self-empowerment and the tools of the modern age.
 
-In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
+Michael currently lives in Austin, TX working with [MyTennisLessons.com](http://mytennislessons.com), and the occasional [freelance project]({{site.base_url}}/freelance/). He also practices [Hapkido](www.hapkido.com) and enjoys playing [Star Citizen](www.rsispaceindustries.com) when not traveling.
 
-There are currently two themes built on Poole:
+\* *Life definitions are subject to change with the times and age.*
 
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
+# Educational Background
 
-Learn more and contribute on [GitHub](https://github.com/poole).
 
-## Setup
 
-Some fun facts about the setup of this project include:
 
-* Built for [Jekyll](http://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Sublime Text 2](http://sublimetext.com), an amazing code editor
-* Designed and developed while listening to music like [Blood Bros Trilogy](https://soundcloud.com/maddecent/sets/blood-bros-series)
 
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
 
-Thanks for reading!
+
+
+
+
+
+
+ After graduating from Northwestern University in 2011, he furthered his American Studies background by traveling the United State during the Occupy movement. He also attended Burning Man.
