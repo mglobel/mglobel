@@ -1,24 +1,23 @@
 ---
 layout: default
-title: Welcome
 ---
 
-<h1>Michael G. Lobel</h1>
-<p>
-  Web and mobile developer based in Austin, TX. Lead developer at
-  <a href='https://mytennislessons.com' target='blank'>MyTennisLessons.com</a>
-  and traveling freelancer. Feel free to contact me about my work or to inquire
-  about starting a project with me.
-</p>
+<div class="home">
 
-<p>
-  Technologies that I frequently use for projects include, are not limited too:
-  <ul>
-    <li><a href="http://github.com" target="_blank">Github</a> for versioning and issue tracking</li>
-    <li><a href="http://jekyllrb.com">Jekyll</a> for static sites and content management</li>
-    <li><a href="http://reactjs.org" target="_blank">Reactjs</a> for dynamic UI components and API interactions</li>
-    <li><a href="http://algolia.com" target="_blank">Algolia</a> for search results and product information</li>
-    <li><a href="http://www.salesforce.com/platform/overview/" target="_blank">Salesforce/Heroku</a> for business automation and consumer apps</li>
-    <li><a href="http://rubyonrails.com" target="_blank">Ruby on Rails</a> for internal business applications</li>
+  <h1 class="page-heading">Posts</h1>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
   </ul>
-</p>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>
