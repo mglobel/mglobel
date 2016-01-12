@@ -14,11 +14,10 @@
       </a>
 
       <div class="trigger">
-        {% for page in site.pages %}
-          {% if page.title and page.permalink != '404.html' %}
-          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-          {% endif %}
-        {% endfor %}
+        <a class="page-link" href="{{ '/about/' | prepend: site.baseurl }}">About</a>
+        <a class="page-link" href="{{ '/learn/' | prepend: site.baseurl }}">Learn</a>
+        <a class="page-link" href="{{ '/play/' | prepend: site.baseurl }}">Play</a>
+        <a class="page-link" href="{{ '/llc/' | prepend: site.baseurl }}">LLC</a>
       </div>
     </nav>
 
