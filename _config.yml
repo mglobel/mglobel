@@ -1,29 +1,13 @@
-# Dependencies
-markdown:         redcarpet
-highlighter:      pygments
-
-# Permalinks
-permalink:        pretty
-relative_permalinks: true
-
-# Setup
-title:            Hyde
-tagline:          'A Jekyll theme'
-description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
-url:              http://hyde.getpoole.com
-baseurl:          /
-
-author:
-  name:           'Mark Otto'
-  url:            https://twitter.com/mdo
-
-paginate:         5
-
+# Site settings
+title: Michael G. Lobel
+email: mglobel@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Lead developer at MyTennisLessons.com and traveling freelancer. Feel free to
+  contact me about my work or to inquire about starting a project with me.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://mglobel.com" # the base hostname & protocol for your site
 twitter_username: ringmylobel
 github_username:  mglobel
 
-# Custom vars
-version:          2.0.0
-
-github:
-  repo:           https://github.com/poole/hyde
+# Build settings
+markdown: kramdown
