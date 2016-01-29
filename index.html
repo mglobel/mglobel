@@ -16,7 +16,7 @@ layout: default
     <p>Born in 1988 in Houston, TX. Moved to Potomac, MD (outside Washington D.C.)
        in 1998 and was subsequently educated in Chicago from 2007 - 2011.
        Attended Burning Man after graduating, did some Occupying, and have been
-       living in Austin, TX since 2012.
+       based in Austin, TX since 2012.
     </p>
     <p>
       I enjoy creative problem-solving, efficiency, and self-empowerment. My most
@@ -26,6 +26,11 @@ layout: default
       Hapkido at Zen Fit Martial Arts and enjoy playing Star Citizen. I hope to
       have my own space ship one day. Until then, a self-driving car would do
       nicely.
+    </p>
+    <p>
+      This site, like myself I hope, is a constant work in progress. It's a
+      space for me to play with the web and share when I can. I hope you enjoy
+      your visit!
     </p>
   </div>
   <hr/>
@@ -52,8 +57,8 @@ layout: default
     <p>
       Here’s some of the works that have influenced me along my journey to
       becoming a more effective human. They may not be the easiest reads, but
-      were recommended to me by good people and will usually leave you changed
-      afterwards.
+      were recommended to me by good people and have left a positive mark on
+      my mind.
     </p>
     <div style="display:flex;">
       <a href="http://www.amazon.com/gp/product/1590308492/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1590308492&linkCode=as2&tag=mglobel-20&linkId=S5YE4LF4QNB5AUHO" target="_blank">
@@ -65,6 +70,38 @@ layout: default
       <a href="http://www.amazon.com/gp/product/1580231306/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1580231306&linkCode=as2&tag=mglobel-20&linkId=SU3P6CMI7YS4DEJ3" target="_blank">
         <img src="/assets/seek-my-face.png" />
       </a>
+    </div>
+  </div>
+  <hr />
+  <div>
+    <div class="col-md-4">
+      <h4>
+        Latest Jams
+      </h4>
+      <div id="hypem-widget"></div>
+      <script type="text/javascript" src="http://hypem.com/widget/v2/loved/LobasaurusRex/10/hype.js?bcol=DEEFCB&lcol=6DA035"></script>
+    </div>
+    <div class="col-md-4">
+      <h4>
+        Latest Tweets
+      </h4>
+      <a class="twitter-timeline" width="160" height="463" data-dnt="true" href="https://twitter.com/ringmylobel" data-widget-id="692980454320951300">Tweets by @ringmylobel</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    </div>
+    <div class="col-md-4">
+      <h4>
+        Latest Musings
+      </h4>
+      <ul class="post-list">
+        {% for post in site.posts %}
+          <li>
+            <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+            <h2>
+              <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            </h2>
+          </li>
+        {% endfor %}
+      </ul>
     </div>
   </div>
 </div>
