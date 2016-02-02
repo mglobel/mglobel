@@ -1,3 +1,35 @@
+.flex-container {
+   display: -webkit-flex;
+   min-width: 320px;
+   max-width: 1220px;
+}
+
+.flex-item {
+  display: -webkit-flex;
+  align-items: center;
+}
+
+.flex-item img {
+  display: -webkit-flex;
+  flex-grow:0;
+  flex-shrink:0;
+  z-index: 0;
+  order: 2;
+}
+
+.flex-overlay {
+  position: absolute;
+  display: -webkit-flex;
+  z-index: 2;
+  order: 1;
+  // breaks mobile
+  padding: 45px;
+  margin-left: 40px;
+  ul {
+    list-style-type: none;
+  }
+}
+
 /**
  * Site header
  */
