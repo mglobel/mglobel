@@ -1,32 +1,14 @@
-.flex-container {
-   display: -webkit-flex;
-   min-width: 320px;
-   max-width: 1220px;
-}
-
-.flex-item {
-  display: -webkit-flex;
+#hero-home {
+  min-height: 160px;
+  min-width: 100%;
+  background-image: url(/assets/atx-background.png);
+  display: flex;
+  justify-content: center;
   align-items: center;
-}
 
-.flex-item img {
-  display: -webkit-flex;
-  flex-grow:0;
-  flex-shrink:0;
-  z-index: 0;
-  order: 2;
-}
-
-.flex-overlay {
-  position: absolute;
-  display: -webkit-flex;
-  z-index: 2;
-  order: 1;
-  // breaks mobile
-  padding: 45px;
-  margin-left: 40px;
-  ul {
-    list-style-type: none;
+  .text-overlay {
+    color: white;
+    text-shadow: -2px 2px black;
   }
 }
 
