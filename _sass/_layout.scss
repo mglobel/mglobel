@@ -1,3 +1,7 @@
+.home {
+  padding-top: 25px;
+}
+
 #hero-home {
   min-height: 160px;
   min-width: 100%;
@@ -106,13 +110,11 @@
  * Site footer
  */
 .site-footer {
-    border-top: 1px solid $grey-color-light;
-    padding: $spacing-unit 0;
+    margin-top: 2px;
 }
 
 .footer-heading {
     font-size: 18px;
-    margin-bottom: $spacing-unit / 2;
 }
 
 .contact-list,

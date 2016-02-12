@@ -66,35 +66,37 @@ layout: default
     </div>
   </div>
   <hr />
-  <div>
-    <div class="col-md-4 col-xs-6">
-      <h4>
-        Latest Jams
-      </h4>
-      <div id="hypem-widget"></div>
-      <script type="text/javascript" src="http://hypem.com/widget/v2/loved/LobasaurusRex/10/hype.js?bcol=DEEFCB&lcol=6DA035"></script>
-    </div>
-    <div class="col-md-4 col-xs-6">
-      <h4>
-        Latest Tweets
-      </h4>
-      <a class="twitter-timeline" width="160" height="463" data-dnt="true" href="https://twitter.com/ringmylobel" data-widget-id="692980454320951300">Tweets by @ringmylobel</a>
-      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-    </div>
-    <div class="col-md-4">
-      <h4>
-        Latest Musings
-      </h4>
-      <ul class="post-list">
-        {% for post in site.posts %}
-          <li>
-            <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-            <h2>
-              <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-            </h2>
-          </li>
-        {% endfor %}
-      </ul>
+  <div class="row">
+    <div>
+      <div class="col-md-4 col-xs-6">
+        <h4>
+          Latest Jams
+        </h4>
+        <div id="hypem-widget"></div>
+        <script type="text/javascript" src="http://hypem.com/widget/v2/loved/LobasaurusRex/10/hype.js?bcol=DEEFCB&lcol=6DA035"></script>
+      </div>
+      <div class="col-md-4 col-xs-6">
+        <h4>
+          Latest Tweets
+        </h4>
+        <a class="twitter-timeline" width="160" height="463" data-dnt="true" href="https://twitter.com/ringmylobel" data-widget-id="692980454320951300">Tweets by @ringmylobel</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+      </div>
+      <div class="col-md-4">
+        <h4>
+          Latest Musings
+        </h4>
+        <ul class="post-list">
+          {% for post in site.posts %}
+            <li>
+              <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+              <h2>
+                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+              </h2>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
     </div>
   </div>
 </div>

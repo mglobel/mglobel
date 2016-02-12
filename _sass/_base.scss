@@ -18,9 +18,12 @@ body {
     font-size: $base-font-size;
     line-height: $base-line-height;
     font-weight: 300;
+    background-image: url("/assets/green-rectangle.png");
     color: $text-color;
-    background-color: $background-color;
     -webkit-text-size-adjust: 100%;
+    .wrapper {
+      background-color: $background-color
+    }
 }
 
 
