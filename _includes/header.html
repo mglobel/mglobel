@@ -1,8 +1,12 @@
 <header class="site-header">
 
   <div class="wrapper">
-
-    <a class="site-title" href="{{ site.baseurl }}/">{{ site.logo }}</a>
+    <span class="site-logo">
+      <a class="site-title" href="{{ site.baseurl }}/">{{ site.logo }}</a>
+      {% if page.permalink == '/llc/' %}
+        <span>LLC</span>
+      {% endif %}
+    </span>
 
     <nav class="site-nav">
       <a href="#" class="menu-icon">
