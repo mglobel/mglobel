@@ -3,15 +3,29 @@ layout: page
 title: About
 permalink: /about/
 ---
+I enjoy creative problem-solving, efficiency, and self-empowerment. My most rewarding tasks are those that help people and organizations improve,usually by providing a better understanding of the tools of the modern age.
 
-Give it a more welcomey feel.
+In my free-time, I practice Hapkido at Zen Fit Martial Arts and enjoy playing Star Citizen.
 
-"Here's what this is for and why I'm doing it."
+*Education*
+Northwestern University, Sep 2007 - Jun 2011
+American Studies Cum Laude, Honors Thesis
+History as a Loaded Gun: American Exceptionalism in World War II First-Person Shooters
 
-"Here's some interesting places to find or engage me."
+*Work History*
 
-"Here's a fun next step into the journey!"
+Currently working Improve -- Technology strategy consultant
 
-*Education
+Took over as Lead Developer
 
-*Bibliography
+Launched Fitness Trainer
+
+Launched Rails App
+
+MyTennisLessons
+
+Freelance Consulting
+
+Olive Oil
+
+National Field
