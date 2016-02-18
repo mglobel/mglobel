@@ -40,6 +40,16 @@
   }
 }
 
+#book-list {
+  display: flex;
+  justify-content: space-around;
+
+  img  {
+    max-height: 310px;
+    max-width: 100%;
+  }
+}
+
 /**
  * Site header
  */
