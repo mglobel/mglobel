@@ -1,8 +1,10 @@
 ---
 layout: page
 title: Learn
+permalink: /learn/
 ---
-Four years ago I started learning how to code. I think the advent of tools and libraries today make it incredibly easy to start learning how to use these technologies.
+Four years ago I started learning how to code. It started as a way to grow
+our business, MyTennisLessons.com, but has turned into a passion and craft that I'm proud to be participating in. I think the advent of tools and libraries today make it incredibly easy to start learning how to use these technologies.
 
 <p>
   Here's some technologies that I'm currently using (though it's an always changing list)

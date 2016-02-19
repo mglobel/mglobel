@@ -12,3 +12,4 @@ github_username:  mglobel
 
 # Build settings
 markdown: kramdown
+include: ["_pages"]
