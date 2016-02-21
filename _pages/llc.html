@@ -68,47 +68,49 @@ permalink: /llc/
 To start a conversation, please provide some details about your organization
 and the problem(s) that you are currently trying to solve:
 </p>
-
 <div class="well">
-  <div class="row">
-    <div class="col-sm-6">
-      <div class="form-group">
-        <label class="control-label">First Name</label>
-        <input class="form-control" type="text" id="first-name" name="first-name"/>
+  <form action="//formspree.io/mglobel@gmail.com" method="POST">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="form-group">
+          <label class="control-label">First Name</label>
+          <input class="form-control" type="text" id="first-name" name="first-name"/>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="form-group">
+          <label class="control-label">Last Name</label>
+          <input class="form-control" type="text" id="last-name" name="last-name"/>
+        </div>
       </div>
     </div>
-    <div class="col-sm-6">
-      <div class="form-group">
-        <label class="control-label">Last Name</label>
-        <input class="form-control" type="text" id="last-name" name="last-name"/>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="form-group">
+          <label class="control-label">Email</label>
+          <input class="form-control" type="text" id="email" name="_replyto"/>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="form-group">
+          <label class="control-label">Business/Organization</label>
+          <input class="form-control" type="text" id="company" name="company"/>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-6">
-      <div class="form-group">
-        <label class="control-label">Email</label>
-        <input class="form-control" type="text" id="email" name="email"/>
+    <div class="row">
+      <div class="form-group col-sm-12">
+        <label class="control-label">What are you working on?</label>
+        <textarea class="form-control" rows="6" id="description" name="description"></textarea>
       </div>
     </div>
-    <div class="col-sm-6">
-      <div class="form-group">
-        <label class="control-label">Business/Organization</label>
-        <input class="form-control" type="text" id="company" name="company"/>
+    <input type="text" name="_gotcha" style="display:none" />
+    <div class="row">
+      <div class="col-sm-12">
+        <input type="submit" class="btn btn-primary pull-right" value="Request a Project">
       </div>
     </div>
-  </div>
-  <div class="row">
-    <div class="form-group col-sm-12">
-      <label class="control-label">What are you working on?</label>
-      <textarea class="form-control" rows="6" id="description" name="description"></textarea>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-12">
-      <button type="button" class="btn btn-primary pull-right">Request a Solution</button>
-    </div>
-  </div>
+  </form>
 </div>
 
 *MGLobel will partner with following people to make sure the right skillset
