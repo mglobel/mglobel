@@ -8,9 +8,10 @@
 }
 
 #hero-home {
-  min-height: 160px;
+  min-height: 295px;
+  max-height: 295px;
   min-width: 100%;
-  background-image: url(/assets/atx-background.png);
+  background-image: url(/assets/atx-background-lg.png);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -254,6 +255,13 @@
 /**
  * Posts
  */
+
+.post {
+  .wrapper {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
 .post-header {
     margin-bottom: $spacing-unit;
 }
