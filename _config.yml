@@ -12,4 +12,5 @@ github_username:  mglobel
 
 # Build settings
 markdown: kramdown
+permalink: /:title/
 include: ["_pages"]
