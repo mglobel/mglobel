@@ -7,19 +7,17 @@
   }
 }
 
+.inner-page-content {
+  background-color: white;
+}
+
 #hero-home {
   min-height: 295px;
   max-height: 295px;
   min-width: 100%;
-  background-image: url(/assets/atx-background-lg.png);
   display: flex;
   justify-content: center;
   align-items: center;
-
-  .text-overlay {
-    color: white;
-    text-shadow: -2px 2px black;
-  }
 }
 
 #services-list {

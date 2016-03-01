@@ -18,11 +18,11 @@ body {
     font-size: $base-font-size;
     line-height: $base-line-height;
     font-weight: 300;
-    background-image: url("/assets/green-rectangle.png");
+    background-image: linear-gradient(-180deg, rgba(89,2,18,.9) 60%, rgba(89,62,11,.6) 100%);
+    border: 1px solid #590212;
     color: $text-color;
     -webkit-text-size-adjust: 100%;
     .wrapper {
-      background-color: $background-color;
       max-width: calc(1200px - (30px * 2));
       padding-left: 0px;
       padding-right: 0px;
