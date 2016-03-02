@@ -1,3 +1,13 @@
+.btn {
+  font-family: $title-font-family;
+}
+
+#contact-form {
+  form {
+    font-family: $title-font-family;
+  }
+}
+
 .home {
   padding-top: 25px;
 
@@ -12,8 +22,7 @@
 }
 
 #hero-home {
-  min-height: 295px;
-  max-height: 295px;
+  min-height: 150px;
   min-width: 100%;
   display: flex;
   justify-content: center;
@@ -155,6 +164,7 @@
     margin-top: 2px;
     padding-left: 30px;
     padding-right: 30px;
+    font-family: $title-font-family;
 }
 
 .footer-heading {
