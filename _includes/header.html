@@ -21,9 +21,11 @@
         <!-- <a class="page-link" href="{{ '/about/' | prepend: site.baseurl }}">About</a>
         <a class="page-link" href="{{ '/learn/' | prepend: site.baseurl }}">Learn</a>
         <a class="page-link" href="{{ '/play/' | prepend: site.baseurl }}">Play</a> -->
-        {% unless page.permalink == '/llc/' %}
+        {% if page.permalink == '/llc/' %}
+          <a class="page-link" href="{{ '/' | prepend: site.baseurl }}">Back to Home</a>
+        {% else %}
           <a class="page-link" href="{{ '/llc/' | prepend: site.baseurl }}">Start a Project</a>
-        {% endunless %}
+        {% endif %}
       </div>
     </nav>
 
