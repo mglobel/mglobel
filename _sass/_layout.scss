@@ -11,14 +11,24 @@
   form {
     font-family: $title-font-family;
   }
+  .btn {
+    font-family: $title-font-family;
+    background-color: #593E0B;
+    color: white;
+    font-size: 18px;
+  }
 }
 
 .home {
   padding-top: 25px;
-
   .wrapper {
     padding-left: 30px;
     padding-right: 30px;
+  }
+  .btn {
+    font-family: $title-font-family;
+    background-color: #593E0B;
+    color: white;
   }
 }
 
