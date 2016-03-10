@@ -16,19 +16,19 @@ layout: default
   <div class="wrapper">
     <div class="row content-panel" style="padding-bottom: 25px;">
       <div class="col-md-9">
-        <h3 class="col-md-11 col-md-offset-1" style="font-family: 'Average Sans', sans-serif;">
+        <h3 class="col-md-11 col-md-offset-1 col-xs-offset-1" style="font-family: 'Average Sans', sans-serif;">
           Find your organization’s center.
         </h3>
-        <div class="col-md-10 col-md-offset-1">
+        <div class="col-md-10 col-xs-offset-1">
           <p>
             Get a fresh perspective and creative solutions with MGLobel LLC
             technology consulting. Offering on-site and remote services that will
             help push your business or non-profit forward in the modern age.
           </p>
-          <a class="btn btn-default btn-lg" href="/llc" role="button">Learn More</a>
+          <a class="btn btn-default btn-lg col-sm-offset-0 col-xs-offset-3" href="/llc" role="button">Learn More</a>
         </div>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-3 col-sm-offset-0 col-xs-offset-3" style="padding-top: 15px;">
         <img src="assets/llc-icon.png" style="max-width:150px;max-height:100%;"/>
       </div>
     </div>
@@ -71,16 +71,22 @@ layout: default
           <h4>
             Latest Musings
           </h4>
-          <ul class="post-list">
-            {% for post in site.posts %}
-              <li>
-                <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-                <h2>
-                  <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-                </h2>
-              </li>
-            {% endfor %}
-          </ul>
+          <div>
+            <span style="display: flex; align-items: center; justify-content: center; background-color: gray; opacity: .9; position: absolute; z-index: 1; width: 90%; height: 100%; color: white;">
+              <h1>COMING SOON</h1>
+            </span>
+              <ul class="post-list">
+                {% for post in site.posts %}
+                  <li>
+                    <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+                    <h2>
+                      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                    </h2>
+                  </li>
+                {% endfor %}
+              </ul>
+            </span>
+          </div>
         </div>
         <div class="hidden-xs hidden-sm col-md-3">
           <h4>
