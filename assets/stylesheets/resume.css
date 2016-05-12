@@ -1,0 +1,17 @@
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+h3 {
+  color: #829B40;
+}
+
+p {
+  color: #525252;
+}
+
+.container {
+  padding: 60px;
+  display: inline-block; 
+}
