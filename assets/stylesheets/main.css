@@ -1,6 +1,7 @@
 body {
   margin: 0px;
 }
+
 h1 {
  color: #A62E44;
  margin-top: 70px;
@@ -36,10 +37,14 @@ form {
 }
 
 .container {
-  display: flex; 
-  flex-direction: column; 
-  align-items: center; 
-  justify-content: center;
+  padding: 40px;
+  display: block; 
+  margin: 0 auto;
+  max-width: 720px
+}
+
+.hero {
+  text-align: center;
 }
 
 .nav-links {
@@ -76,5 +81,5 @@ form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 400px;
+  max-width: 500px;
 }
