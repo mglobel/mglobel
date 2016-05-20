@@ -36,3 +36,9 @@ img {
   display: flex;
   align-content: center
 }
+
+.resume-links {
+  max-width: 275px;
+  display: flex;
+  justify-content: space-between;
+}
