@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html>
-  
   <head>
     <title>MGLobel | Personal website of Michael G. Lobel</title>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,100' rel='stylesheet' type='text/css'>
     <link rel='stylesheet' type='text/css' href='assets/stylesheets/main.css'>
     <link rel='stylesheet' type='text/css' href='assets/stylesheets/resume.css'>
-    
+    <script src='assets/javascripts/vue.js'></script>
   </head>
   
   <body class='container'>
@@ -37,104 +36,54 @@
     <a name='current-work' />
     <h2>MyTennisLessons and FitnessTrainer Experience</h2>
     <hr />
-    <h3>FULL-STACK MULTI-SITE MANAGEMENT</h3> 
-    <p>
-      Over the past 5 years I've helped guide and build the foundations for the MyTennisLessons 
-      and FitnessTrainer platforms. From building our first sales CRM to hacking at experimental 
-      features, I've had the pleasure of working on just about every aspect of our technology 
-      stack. Currently I serve as the lead developer, managing our shared Ruby on Rails codebases and 
-      coordinating new projects. In the past I've served in a variety of roles, from the first sales 
-      person, to sales engineer, to product manager working with overseas contractors. I love being 
-      able to touch so many different parts of the business, and finding ways to improve the efficiency
-      of our marketing, sales, and operations teams. And of course finding ways to make our user's 
-      experience the best-in-class.
-    </p>
+    <div class='content'>
+      <h3>E-COMMERCE SOLUTIONS</h3>
+      <p>
+        The core of any online business is an e-commerce solution that creates a trusting user 
+        experience. On MyTennisLessons and FitnessTrainer, our custom Braintree integration makes 
+        it easy for clients to add payment methods, book packages of lesson credits, and use their 
+        credits to schedule with providers. All while being PCI-compliant. Over the past three years 
+        we’ve added new features like coupon codes, customizable packages, delayed billing, and 
+        simplified user-flow that’s processed over $3 million in sales.
+      </p>
+      
+      <h3>DYNAMIC GEO-SEARCH RESULTS</h3>
+      <p>
+        Search pages are critical to helping your uses easily find the right products on your site. With MyTennisLessons and FitnessTrainer we have the added challenge of connecting users not just with a product, but a person that needs to be near them. We use Algolia to index all of our service-providers and deliver a quick and responsive search experience, with geo-searching. The initial implementation was set in place by our Lead Developer in 2014, Luke Wendling, but since then I've used that framework to power email campaigns, custom recommendation pages, and admin-search interfaces. Algolia recently released a component library for search results, Instantsearch.js, that I've been testing on side projects and hope to include on the MyTennisLessons and FitnessTrainer platform soon for a next-level search interface.
+      </p>
 
-    <h3>E-COMMERCE SOLUTIONS</h3>
-    <p>
-      One of the core components for both of our sites is making it easy for clients to find a 
-      provider in their area, add a payment method, and start scheduling. Payments are handled 
-      using a custom Braintree integration, which has handled over $3 million in  sales over the 
-      past three years. Once a client has an attached payment method, they can purchase packages 
-      for coaches, monitor their order status and use the package for lesson credits. Providers 
-      receive notifications about new bookings and can use their backend to schedule lessons from a
-      booking. Our system also monitors and tracks providers receiving payment for lessons.
-      The booking platform was one of the first features we developed, and I've worked with 
-      numerous developers over the years to improve it and expand it's functionality.
-    </p>
+      <h3>SALESFORCE INTEGRATIONS</h3>
+      <p>
+        Behind the scenes, MyTennisLessons and FitnessTrainer's operations rely on Salesforce to keep track of our user-base and the health of our business. Our Salesforce integration lets our team stay on top of potential clients, track instructor applications, and provides a data-hub for our marketing integrations. In 2015 we integrated with Heroku Connect, making our data-flow incredibly easy to manage and allowing our Salesforce database to become a powerful tool for new data-driven applications.
+      </p>
 
-    <h3>RECURRING BILLING AND SCHEDULING</h3>
-    <p>
-      Last Fall I led an a development initiative to make one of the biggest changes to our scheduling 
-      platform since it was first set up. We created an option that allowed for providers to charge 
-      clients on a per-lesson basis. This involved a significant re-engineering of our upfront order-based system, but providing this option on the front-end doubled our online conversions over the fall and winter. We've removed it for our busy seasons, since many providers get filled up quickly during the spring and summer and prefer customer with pre-purchased packages during this time. 
-      However the ability to add pay-per-session pricing is now an easy toggle and can even be enabled 
-      on a per client basis for continued engagement after completing an initial package.
-    </p>
+      <h3>CUSTOM SEO ENGINE</h3>
+      <p>
+        The first version of our SEO engine was as bootstrapped as it gets. We had a Wordpress template that we copied and pasted for each new city.  But over time as we on-boarded more providers and added new cities, it became difficult to manage the hundreds of pages. So in 2013 I led an initiative to create a dynamic SEO-engine, that could have easily temptable content, but also the flexibility to change and override content on a per-page basis. Our first version was actually a static site generator, for ultimate page-load speed, but ultimately it was difficult to maintain and give marketers easy access, so we soon switched over to a Rails-based solution. That solution now powers thousands of first-page ranked landing pages for tennis lessons and personal trainers across the country, all with minimal developer involvement.
+      </p>
 
-    <h3>SALESFORCE INTEGRATIONS</h3>
-    <p>
-      Behind the scenes, MyTennisLessons and FitnessTrainer's operations rely on Salesforce to keep 
-      track of our user-base and the health of our business. Our Salesforce integration lets our team 
-      stay on top of potential clients, track instructor applications, and provides a data-hub for our 
-      marketing integrations. In 2015 we integrated with Heroku Connect, making our Salesforce 
-      integration incredibly easy to manage and allowing our Salesforce data to become a powerful 
-      tool for new data-driven applications.
-    </p>
+      <h3>EMAIL MARKETING SOLUTIONS</h3>
+      <p>
+        Over the past five years, email has played an important role in engaging our client and provider networks Our marketing solutions have ranged from flat-out manual email sending, custom Rails drip mailers, Customer.io, Mailchimp, Hubspot, and Act-On, in a search to try and find the perfect balance of ease-of-access by marketing end-users and effective segment targeting. Today I'm happy to say we've found our best balance yet by using SendWithUs for amazingly easy to access templates that work for in-app emails, drip campaigns, and marketing blasts. This allows us to change, test, and grow our email templates, without costly code changes.
+      </p>
+      
+      <h3>RECURRING BILLING AND SCHEDULING</h3>
+      <p>
+        One of the most recent additions to the MyTennisLessons and FitnessTrainer platforms is the 
+        ability for clients to sign-up under a ‘pay-as-you go’ system where billing happens per-lesson, 
+        instead of with an upfront package. This involved a significant re-engineering of our previous 
+        package-based system, but providing this option on the front-end doubled our online conversions 
+        over the fall and winter. We've removed it for our busy seasons, since many providers get filled 
+        up quickly during the spring and summer and prefer customer with pre-purchased packages during 
+        this time. However the ability to add pay-per-session pricing is now an easy toggle and has made 
+        our platform much more flexible.
+      </p>
 
-    <h3>CUSTOM SEO ENGINE</h3>
-    <p>
-      The first version of our SEO engine was as bootstrapped as it gets. We had a Wordpress template 
-      that we copied and pasted for each new city. Viola, engine made. But over time as we on-boarded 
-      more providers and added new cities, it became difficult to manage the hundreds of pages. So in 
-      2013 I led an initiative to create a dynamic SEO-engine.  Important things we had to consider 
-      for an SEO engine were defaults and overrides for content and seo tags, CDN caching for maximum 
-      performance, and ease-of-use by end users. Our first version was actually a static site generator,
-      for ultimate page-load speed, but ultimately it was difficult to maintain and allow marketers 
-      easy access, so we soon switched over to a Rails-based solution. That solution now powers 
-      thousands of first-page ranked landing pages for tennis lessons and personal trainers across 
-      the country, all with minimal developer involvement.
-    </p>
-
-    <h3>DYNAMIC GEO-SEARCH RESULTS</h3>
-    <p>
-      Every e-commerce site needs a strong search page to easily connect users with the products that matter 
-      to them. We use Algolia to index all of our service-providers and deliver a quick and responsive search 
-      experience. The initial implementation was set in place by our Lead Developer in 2014, Luke Wendling, 
-      but since then I've used that framework to power email campaigns, custom recommendation pages, and 
-      admin-search interfaces. Most recently I implemented a custom node script that can be used in Zapier 
-      to find the closest 3 providers, which can then be used in marketing emails or other Zaps. Algolia 
-      recently released a component library for search results, Instantsearch.js, that I've been testing on 
-      side projects and hope to include on the MyTennisLessons and FitnessTrainer platform soon for a next-level 
-      search interface.
-    </p>
-
-    <h3>EMAIL MARKETING SOLUTIONS</h3>
-    <p>
-      Over the past five years, email has played an important role in engaging our client and provider networks. One of the 
-      biggest challenges we've faced is building dynamic drip campaigns that factor in the user's actions on the website, 
-      sales person's interactions with the user, and the lifecycle stage of users in our signup process. Using Salesforce
-      as a datasource for our marketing integrations has allowed us to bridge the gap between user autonomous actions and 
-      sales-person interactions. Our marketing solutions have ranged from flat-out manual email sending,  custom Rails drip mailers, Customer.io, Mailchimp, 
-      Hubspot, and Act-On, in a search to try and find the perfect balance of ease-of-access by marketing end-users and effective
-      segment targeting. Today I'm happy to say we've found our best balance yet by using SendWithUs for amazingly easy to access 
-      templates that work for in-app emails, drip campaigns, and marketing blasts. This allows us to change, test, and grow our email 
-      templates, without costly code changes.
-    </p>
-
-    <h3>ADMIN USER INTERFACES</h3>
-    <p>
-      I've spoken with many people over the years looking to setup or currently running a marketplace, 
-      and almost always I have to remind people about one of the most important users of the system..admins.
-       A lot of focus  goes into the service provider and recipient user's experiences. But invariably any 
-       marketplace service is going to have to play some sort of role in-between these two sides of the service. 
-       Making sure that admin users can easily access important user data, see reports to understand the health of 
-       the business, and provide quick and efficient support is essential to providing a best-in-class service. 
-       Most of our admin interfaces are built off of ActiveAdmin, which is where I first learned to use Ruby on 
-       Rails, and allow basic CRUD operations and a nice separation of concerns for any custom actions. More and 
-       more though we've been moving admin functionality into Saleforce, and syncing the data using a combination 
-       of Heroku Connect and custom webhooks with Zapier.
-    </p>
+      <h3>ADMIN USER INTERFACES</h3>
+      <p>
+        A lot of focus for marketplaces goes into the service provider and recipient user's experiences. But invariably any marketplace service is going to have to play some sort of role in-between these two sides of the service. Making sure that admin users can easily access important user data, see reports to understand the health of the business, and provide quick and efficient support is essential to providing a best-in-class service. Most of our admin interfaces are built off of ActiveAdmin, which is where I first learned to use Ruby on Rails, and allow basic CRUD operations and a nice separation of concerns for any custom actions. More and more though we've been moving admin functionality into Saleforce, and syncing the data using a combination of Heroku Connect and custom webhooks with Zapier.
+      </p>
+    </div>
 
     <a name='projects' />
     <h2>Other Professional Experience</h2>
@@ -198,4 +147,21 @@
       implementation that works best for you.
     </i>
   </body>
+  <script>
+    new Vue({
+      el: '.content',
+      data: {
+        truncateContent: false
+      },
+      methods: {
+        showContent: function () {
+          console.log('Show text')
+        },
+        hideContent: function () {
+          return string.substring(0,5)+'...';
+          console.log('hide text')
+        }
+      }
+    })
+  </script>
 </html>  
