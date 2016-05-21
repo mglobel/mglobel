@@ -10,8 +10,10 @@ h1 {
 }
 
 h2 {
+  margin-top: 10px;
+  margin-bottom: 0px;
   padding-top: 0px;
-  padding-bottom: 7px;
+  padding-bottom: 12px;
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
 }
@@ -22,10 +24,6 @@ a {
 
 p{
   font-family: 'Roboto', serif;
-}
-
-button {
-  margin-bottom: 18px;
 }
 
 form {
@@ -45,6 +43,55 @@ form {
 
 .hero {
   text-align: center;
+}
+
+.button {
+  display: block;
+  margin: 0 auto;
+  height: 40px;
+  width: 100px;
+  margin-bottom: 28px;
+  padding: 0px 10px 0px 10px;
+  background: #00B22E;
+  
+  border: 2px solid rgba(0, 84, 22, 0.59);
+  
+  /*should be a darker shade of background and reduced opacity */
+  font: bold 1.0em/40px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+  text-align: center;  
+  color: rgba(0, 84, 22, 0.9);
+  text-shadow: 0 2px 2px rgb(255, 255, 255, 0.2);
+  
+  
+  /*fades to something slightly darker */
+  background: -webkit-linear-gradient(top, #00B22E, #0A6522);
+  background: -moz-linear-gradient(top, #00B22E, #0A6522);
+  background: -o-linear-gradient(top, #00B22E, #0A6522);
+  background: -ms-linear-gradient(top, #00B22E, #0A6522);
+  background: linear-gradient(top, #00B22E, #0A6522);
+  
+  -webkit-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  
+  /*-webkit-box-shadow: 0 8px 0 #1b383b;
+  -moz-box-shadow: 0 8px 0 #1b383b;*/
+  box-shadow: 0 6px 0 #005421;
+}
+
+a.button {
+  text-decoration: none;
+}
+
+/* make lighter than original button */
+a.button:hover {
+ background: #39BF5C;
+ background: -webkit-linear-gradient(top, #39BF5C, #00B22E);
+ background: -moz-linear-gradient(top, #39BF5C, #00B22E);
+ background: -o-linear-gradient(top, #39BF5C, #00B22E);
+ background: -ms-linear-gradient(top, #39BF5C, #00B22E);
+ background: linear-gradient(top, #39BF5C, #00B22E);
 }
 
 .nav-links {
