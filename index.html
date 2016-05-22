@@ -13,11 +13,11 @@
       <span class='modal-background' v-on:click='closeModal' v-bind:style="{ display: displayForm }" data-modal='true'>
         <div class='modal-container'>
           <div style='display: flex; flex-direction: row;'>
-            <h3>Ready to get in contact?</h3>
+            <h2 class='form-header'>Ready to get in contact?</h2>
           </div>
           <form action='https://formspree.io/mglobel@gmail.com' method='POST'>
             <label>
-              <span>NAME</span>
+              <span>NAME &nbsp</span>
               <input
                 name='name'
                 type='text'
@@ -25,7 +25,7 @@
                 required='true'/>
             </label>
             <label>
-              <span>EMAIL</span>
+              <span>EMAIL &nbsp</span>
               <input
                 name='_replyto'
                 type='email'
@@ -56,7 +56,7 @@
               You'll receive an email with a follow
               up survey. I look forward to finding out more about what you're working on!
             </small>
-            <input type='submit' value='Get in Contact'/>
+            <input type='submit' class='contact-submit' value='Get in Contact'/>
           </form>
         </div>
       </span>
@@ -77,7 +77,7 @@
           <a href='https://www.linkedin.com/in/michaelglobel' target='_blank'>LinkedIn</a>
           <a href='https://github.com/mglobel/' target='_blank'>Github</a>
           <a href='https://twitter.com/ringmylobel' target='_blank'>Twitter</a>
-          <a href='http://hypem.com/LobasaurusRex' target='_blank'>Jam City</a>
+          <a href='http://hypem.com/LobasaurusRex' target='_blank'>Latest Jams</a>
         </div>
       </div>
     <script>
