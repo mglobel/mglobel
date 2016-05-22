@@ -18,6 +18,10 @@ h2 {
   font-weight: 100;
 }
 
+h3 {
+  font-family: 'Roboto', sans-serif;
+}
+
 a {
   font-family: 'Roboto', sans-serif;
 }
@@ -30,8 +34,67 @@ form {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: center;
+  
   width: 95%;
   min-height: 220px;
+
+  font-size: 18px;  
+}
+
+.modal-container {
+  z-index: 2;
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 25px;
+  border: 1px solid #888;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 500px;
+}
+
+label {
+  float: left;
+  text-align: left;
+  margin-right: 15px;
+  width: 350px;
+  font-family: 'Roboto';
+}
+
+input {
+  border-radius: 5px;
+  padding: 5px;
+  margin: 10px;
+  margin-left: 7px;
+  width: 80%;
+  max-width: 250px;
+  font-size: 16px;
+  font-family: 'Roboto';
+}
+
+input::-webkit-input-placeholder {
+  color: black;
+  
+}
+
+select {
+  max-width: 255px;
+  width: 80%;
+  height: 34px;
+  padding: 5px;
+  border-radius: 5px;
+  padding: 5px;
+  margin-left: 2px;
+}
+
+small {
+  width: 360px;
+  margin: 10px;
+  padding: 5px;
+  display: flex;
+  text-justify: left;
 }
 
 .container {
@@ -118,15 +181,4 @@ a.button:hover {
   align-items: center;
 }
 
-.modal-container {
-  z-index: 2;
-  background-color: #fefefe;
-  margin: 15% auto;
-  padding: 25px;
-  border: 1px solid #888;
-  width: 80%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 500px;
-}
+

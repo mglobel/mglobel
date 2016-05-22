@@ -16,30 +16,42 @@
             <h3>Ready to get in contact?</h3>
           </div>
           <form action='https://formspree.io/mglobel@gmail.com' method='POST'>
-            <input
-              name='name'
-              type='text'
-              placeholder='Name'
-              required='true'/>
-            <input
-              name='_replyto'
-              type='email'
-              placeholder='Email'
-              required='true'/>
-            <input
-              name='phone'
-              type='telephone'
-              placeholder='Phone (Optional)'
-              required='true'/>
-            <select name='organization-level' required='true'>
-              <option>Select the type of project...</option>
-              <option value='personal-project'>Personal Project</option>
-              <option value='startup'>Startup</option>
-              <option value='small-business'>Small Business</option>
-              <option value='enterprise'>Enterprise</option>
-              <option value='not-for-profit'>Non-Profit/Community Initiative</option>
-              <option value='chat'>Just want to chat</option>
-            </select>
+            <label>
+              <span>NAME</span>
+              <input
+                name='name'
+                type='text'
+                placeholder='Name'
+                required='true'/>
+            </label>
+            <label>
+              <span>EMAIL</span>
+              <input
+                name='_replyto'
+                type='email'
+                placeholder='Email'
+                required='true'/>
+            </label>
+            <label>
+              <span>PHONE</span>
+              <input
+                name='phone'
+                type='telephone'
+                placeholder='Phone (Optional)'
+                required='true'/>
+            </label>
+            <label>
+              <span>PURPOSE</span>
+              <select name='organization-level' required='true'>
+                <option>Select the type of project...</option>
+                <option value='personal-project'>Personal Project</option>
+                <option value='startup'>Startup</option>
+                <option value='small-business'>Small Business</option>
+                <option value='enterprise'>Enterprise</option>
+                <option value='not-for-profit'>Non-Profit/Community Initiative</option>
+                <option value='chat'>Just want to chat</option>
+              </select>
+            </label>
             <small>
               You'll receive an email with a follow
               up survey. I look forward to finding out more about what you're working on!
@@ -57,7 +69,7 @@
           <h2>
             Hand-crafted business technology.
           </h2>
-          <a href='#contact-form' class='button' v-on:click='openModal'>Learn More</a>
+          <a href='#' class='button' v-on:click='openModal'>Learn More</a>
         </div>
         
         <div class='nav-links'>
@@ -72,7 +84,7 @@
       new Vue({
         el: '#app',
         data: {
-          displayForm: 'none'
+          displayForm: 'block'
         },
         methods: {
           openModal: function () {
