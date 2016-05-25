@@ -73,7 +73,7 @@ span {
   display: inline;
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 460px) {
   label {
     margin: 0 auto;
   }
