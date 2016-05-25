@@ -155,11 +155,14 @@ a.button:hover {
  background: linear-gradient(top, #39BF5C, #00B22E);
 }
 
-
-nav > li {
+nav ul {
+  padding-left: 0;
+}
+nav li {
   list-style-type: none;
-  margin-top: 7px;
+  margin-top: 10px;
   text-align: center;
+  font-size: 1.1em;
 }
 
 
