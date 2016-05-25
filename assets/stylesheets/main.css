@@ -155,15 +155,13 @@ a.button:hover {
  background: linear-gradient(top, #39BF5C, #00B22E);
 }
 
-.nav-links {
-  display: flex; 
-  flex-direction: column; 
+
+nav > li {
+  list-style-type: none;
+  margin-top: 7px;
   text-align: center;
 }
 
-.nav-links a {
-  padding: 7px;
-}
 
 .modal-background {
   position: fixed;
