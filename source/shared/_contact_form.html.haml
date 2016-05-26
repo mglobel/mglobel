@@ -1,0 +1,39 @@
+- content_for :assets do
+  = stylesheet_link_tag 'components/contact_form'
+
+%span.modal-background{"data-modal" => "true", "v-bind:style" => "{ display: displayForm }", "v-on:click" => "closeModal"}
+  .modal-container
+    %div
+      %h2.form-header Ready to get in contact?
+      .small
+        Use the form below to receive an email with a follow up survey. I look 
+        forward to finding out more about what you're working on!
+    %form{:action => "https://formspree.io/mglobelpvfu9zlr@robot.zapier.com", :method => "POST"}
+      .form-group
+        %label 
+          NAME
+        %input{:name => "name", :placeholder => "Name", :required => "true", :type => "text"}/
+      .form-group
+        %label 
+          EMAIL
+        %input{:name => "_replyto", :placeholder => "Email", :required => "true", :type => "email"}/
+      .form-group
+        %label 
+          PHONE
+        %input{:name => "phone", :placeholder => "Phone (Optional)", :type => "telephone"}/
+      .form-group
+        %label
+          PROJECT
+        %select{:name => "organization-level", :required => "true"}
+          %option Select the type of project...
+          %option{:value => "personal-project"} Personal Project
+          %option{:value => "small-business"} Small Business
+          %option{:value => "startup"} Startup
+          %option{:value => "enterprise"} Enterprise
+          %option{:value => "not-for-profit"} Non-Profit/Community Initiative
+          %option{:value => "chat"} Just want to chat
+      %input{:name => "_next", :type => "hidden", :value => "//mglobel.com/thanks.html"}/
+      %input{:name => "_cc", :type => "hidden", :value => "mglobel@gmail.com"}/
+      %input{:name => "_format", :style => "display:none", :type => "text", :value => "plain"}/
+      %input{:name => "_gotcha", :style => "display:none", :type => "text"}/
+      %input.submit-form{:type => "submit", :value => "Get in Contact"}/

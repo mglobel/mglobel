@@ -1,0 +1,104 @@
+.index {
+  .hero {
+    text-align: center;
+  }
+
+  .button {
+     display: inline-block;
+     margin: 0 auto;
+     height: 40px;
+     width: 120px;
+     margin-bottom: 28px;
+     padding: 0px 10px 0px 10px;
+     background: #00B22E ;
+     border: 2px solid rgba(0, 84, 22, 0.59);
+     font: bold 1.0em/40px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+     text-align: center;
+     color: rgba(0, 84, 22, 0.9);
+     text-shadow: 0 2px 2px rgba(255, 255, 255, 0.2);
+     background: -webkit-linear-gradient(top, #00B22E , #36A553 );
+     background: -moz-linear-gradient(top, #00B22E , #0A6522 );
+     background: -o-linear-gradient(top, #00B22E , #0A6522 );
+     background: -ms-linear-gradient(top, #00B22E , #0A6522 );
+     background: linear-gradient(top, #00B22E , #0A6522 );
+     -webkit-border-radius: 10px;
+     -khtml-border-radius: 10px;
+     -moz-border-radius: 10px;
+     border-radius: 10px;
+     color: white;
+     box-shadow: 1px 1px #005421 ;
+     text-shadow: 1px 0 0 #333333 ;
+  }
+
+
+  a.button {
+    text-decoration: none;
+  }
+
+  /* make lighter than original button */
+  a.button:hover {
+   background: #39BF5C;
+   background: -webkit-linear-gradient(top, #39BF5C, #00B22E);
+   background: -moz-linear-gradient(top, #39BF5C, #00B22E);
+   background: -o-linear-gradient(top, #39BF5C, #00B22E);
+   background: -ms-linear-gradient(top, #39BF5C, #00B22E);
+   background: linear-gradient(top, #39BF5C, #00B22E);
+  }
+
+  nav ul {
+    padding-left: 0;
+  }
+  nav li {
+    list-style-type: none;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1.1em;
+  }
+}
+
+.experience {
+  h1 {
+    margin-bottom: 0px;
+  }
+
+  h2 {
+    font-weight: 400;
+    margin-top: 30px;
+    margin-bottom: 0px;
+  }
+
+  h3 {
+    font-family: 'Roboto', sans-serif;
+    color: #00B22E;
+    margin-bottom: 0px;
+  }
+
+  h4 {
+    margin-top: 10px;
+  }
+
+  p {
+    color: #525252;
+    margin-top: 0px;
+    margin-bottom: 25px;
+  }
+
+  img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-top: 50px;
+    margin-right: 30px;
+  }
+
+  .header {
+    display: flex;
+    align-content: center
+  }
+
+  .resume-links {
+    max-width: 275px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
