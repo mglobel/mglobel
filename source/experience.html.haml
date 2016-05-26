@@ -1,0 +1,117 @@
+.container
+  .header
+    = image_tag 'profile-pic.jpg'
+    .header-text
+      %h1 Michael G. Lobel
+      %h4
+        (512) 522-7608 | mglobel@gmail.com | <a href='/'>mglobel.com</a>
+        
+  .resume-links
+    %a{:href => "#current-work"} Current Work
+    |
+    %a{:href => "#projects"} Projects
+    |
+    %a{:href => "#activities"} Activities
+  %a{:name => "current-work"}/
+  %h2 MyTennisLessons and FitnessTrainer Experience
+  %p
+    Four years ago I began learning 'how to code.' Initially it was just a way to grow
+    our business, but creating effective, focused software is now a passion
+    that I practice as much as possible. Below are some of the initiatives that I've helped
+    undertake for
+    %a{:href => "https://mytennislessons.com"} MyTennisLessons
+    and
+    %a{:href => "https://fitnesstrainer.com"} FitnessTrainer
+    over the past several years.
+  %hr/
+  .content
+    %h3 E-COMMERCE SOLUTIONS
+    %p
+      The core of any online business is an e-commerce solution that creates a trusting user
+      experience. On MyTennisLessons and FitnessTrainer, our custom Braintree integration makes
+      it easy for clients to add payment methods, book packages of lesson credits, and use their
+      credits to schedule with providers. All while being PCI-compliant. Over the past three years
+      we’ve added new features like coupon codes, customizable packages, delayed billing, and
+      simplified user-flow that’s processed over $3 million in sales.
+    %h3 DYNAMIC GEO-SEARCH RESULTS
+    %p
+      Search pages are critical to helping your uses easily find the right products on your site. With MyTennisLessons and FitnessTrainer we have the added challenge of connecting users not just with a product, but a person that needs to be near them. We use Algolia to index all of our service-providers and deliver a quick and responsive search experience, with geo-searching. The initial implementation was set in place by our Lead Developer in 2014, Luke Wendling, but since then I've used that framework to power email campaigns, custom recommendation pages, and admin-search interfaces. Algolia recently released a component library for search results, Instantsearch.js, that I've been testing on side projects and hope to include on the MyTennisLessons and FitnessTrainer platform soon for a next-level search interface.
+    %h3 SALESFORCE INTEGRATIONS
+    %p
+      Behind the scenes, MyTennisLessons and FitnessTrainer's operations rely on Salesforce to keep track of our user-base and the health of our business. Our Salesforce integration lets our team stay on top of potential clients, track instructor applications, and provides a data-hub for our marketing integrations. In 2015 we integrated with Heroku Connect, making our data-flow incredibly easy to manage and allowing our Salesforce database to become a powerful tool for new data-driven applications.
+    %h3 CUSTOM SEO ENGINE
+    %p
+      The first version of our SEO engine was as bootstrapped as it gets. We had a Wordpress template that we copied and pasted for each new city.  But over time as we on-boarded more providers and added new cities, it became difficult to manage the hundreds of pages. So in 2013 I led an initiative to create a dynamic SEO-engine, that could have easily temptable content, but also the flexibility to change and override content on a per-page basis. Our first version was actually a static site generator, for ultimate page-load speed, but ultimately it was difficult to maintain and give marketers easy access, so we soon switched over to a Rails-based solution. That solution now powers thousands of first-page ranked landing pages for tennis lessons and personal trainers across the country, all with minimal developer involvement.
+    %h3 EMAIL MARKETING SOLUTIONS
+    %p
+      Over the past five years, email has played an important role in engaging our client and provider networks Our marketing solutions have ranged from flat-out manual email sending, custom Rails drip mailers, Customer.io, Mailchimp, Hubspot, and Act-On, in a search to try and find the perfect balance of ease-of-access by marketing end-users and effective segment targeting. Today I'm happy to say we've found our best balance yet by using SendWithUs for amazingly easy to access templates that work for in-app emails, drip campaigns, and marketing blasts. This allows us to change, test, and grow our email templates, without costly code changes.
+    %h3 RECURRING BILLING AND SCHEDULING
+    %p
+      One of the most recent additions to the MyTennisLessons and FitnessTrainer platforms is the
+      ability for clients to sign-up under a ‘pay-as-you go’ system where billing happens per-lesson,
+      instead of with an upfront package. This involved a significant re-engineering of our previous
+      package-based system, but providing this option on the front-end doubled our online conversions
+      over the fall and winter. We've removed it for our busy seasons, since many providers get filled
+      up quickly during the spring and summer and prefer customer with pre-purchased packages during
+      this time. However the ability to add pay-per-session pricing is now an easy toggle and has made
+      our platform much more flexible.
+    %h3 ADMIN USER INTERFACES
+    %p
+      A lot of focus for marketplaces goes into the service provider and recipient user's experiences. But invariably any marketplace service is going to have to play some sort of role in-between these two sides of the service. Making sure that admin users can easily access important user data, see reports to understand the health of the business, and provide quick and efficient support is essential to providing a best-in-class service. Most of our admin interfaces are built off of ActiveAdmin, which is where I first learned to use Ruby on Rails, and allow basic CRUD operations and a nice separation of concerns for any custom actions. More and more though we've been moving admin functionality into Saleforce, and syncing the data using a combination of Heroku Connect and custom webhooks with Zapier.
+  %a{:name => "projects"}/
+  %h2 Other Professional Experience
+  %p
+    Recently I've started to help other businesses by building specific, targeted projects
+    that builds off my experience building and scaling technology for our
+    own business over the past 4 years. Below are some of the projects that I'm currently working on.
+  %hr/
+  %h3 EmberScreencasts
+  %p
+    This year I started helping our first lead developer Jeffrey Biles with his latest website, Emberscreencasts.com.
+    My primary role in the project was to manage the design and front-end development process and create a custom integration
+    with Stripe. After completing the project, I'm a huge fan of Stripe's API and look forward to using it again on a project.
+    Next up is a search page, powered by Algolia's new Instantsearch.js library.
+  %h3 ZenFit Martial Arts
+  %p
+    In addition to being an active member of the
+    %a{:href => "http://zenfitaustin.com"} ZenFit
+    gym, I've also recently started helping the business grow
+    by adopting more effecient business technology. The first solution I've setup for them is an online sign-up for
+    kids camps, taking advantage of Braintree's first $50K free of fees offer. The next project in the works is a student
+    portal for managing membership and providing additional resources for current students. I also teach kids classes and
+    camps occassionally, which is always a fun time!
+  %a{:name => "activities"}/
+  %h2 Extracurriculars
+  %hr/
+  %h3 Hapkido / ZenFit
+  %p
+    I've practiced the Korean martial arts of Hapkido for six years, four years at Yong Song Lee's Hapmudo Studio and now two years at ZenFit Hapkido. It's had a
+    tremendous influence on my discipline, and I try to incorporate aspects into my daily and professional life as often
+    as a can. Next up is Jiu-Jitsu..
+  %h3 Star Citizen
+  %p
+    Video games have always been an important part of my life. I began playing them at a young age with my father, and even wrote a
+    senior thesis on the topic
+    = succeed "." do
+      %i History as a Loaded Gun: American Exceptionalism in World War II First-Person Shooters
+    My latest
+    video game enthusiasm is the kickstarter based
+    = succeed "." do
+      %i Star Citizen
+    The game has raised over $113 million in crowd-funding and promises
+    an unprecendents open-galaxy approach. Amazingly the game has been playable throughout active development for over three years. When I'm not
+    coding, practicing martial arts, or exploring Austin with friends, you can find me hanging out in a starship somewhere outside the Crusader planetary
+    system.
+  %h3 Heidi Klum
+  %p
+    On Christmas Day of 2011, our two founders Andrew Marcus and Jesse Silkoff met with a random vehicle in a grocery store parking lot
+    and picked up a 9-month old boxer puppy. Her name had already been given by Austin Boxer Rescue, Heidi Klum. Since that fortituous day
+    she has been our inspiration, our muse, our HR, and our reason. Would this company of five dudes living and working in a house together
+    have worked without her? Who knows. But I think one thing we all know... #itsall4klum
+  %hr/
+  %p
+    Think that technology could help your business? I am currently available for part-time and fixed-scope projects. I specialize in helping
+    businesses find cost-effective and timely solutions for real-world problems. Each business is unique, and I pride myself in finding the solution and
+    implementation that works best for you.
+    = link_to 'Contact me today', '/', fragment: 'contact-form'
+    to start a conversation.
