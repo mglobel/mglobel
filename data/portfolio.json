@@ -1,0 +1,35 @@
+[
+  {
+    "title": "1st page ranked SEO pages.",
+    "description": 0,
+    "business": "MyTennisLessons",
+    "url": "https://mytennislessons.com/locations/austin-tennis-lessons",
+    "role": "Rails Developer, Project Manager",
+    "tags": "SEO",
+    "technology": "['rails']",
+    "screenshot": "http://res.cloudinary.com/mglobel/image/upload/c_scale,w_300/v1465833461/Portfolio/mtl-landing-page-screenshot.png",
+    "preview": "https://gyazo.com/68f87cfb216d60845d95f3d538a29943"
+  },
+  {
+    "title": "SEO Pages with search results.",
+    "description": "FitnessTrainer.com SEO landing page search results.",
+    "business": "FitnessTrainer",
+    "url": "http://fitnesstrainer.com/austin-tx/personal-trainer",
+    "role": "Project Manager",
+    "tags": "Search, SEO",
+    "technology": "['algolia', 'rails', 'cdn']",
+    "screenshot": "http://res.cloudinary.com/mglobel/image/upload/c_scale,w_300/v1465833474/Portfolio/ft-landing-page-screenshot.png",
+    "preview": "https://gyazo.com/2c7b180f62b8d0419ccca85a8145d5c4"
+  },
+  {
+    "title": "Monthly subscriber checkout.",
+    "description": "Monthly subscription sign-up form with custom Stripe integration",
+    "business": "EmberScreencasts",
+    "url": "https://www.emberscreencasts.com/sales",
+    "role": "Rails Developer, JS Developer",
+    "tags": "E-commerce, Subscription Billing",
+    "technology": "['stripe', 'rails', 'jquery']",
+    "screenshot": "http://res.cloudinary.com/mglobel/image/upload/c_scale,w_300/v1465833505/Portfolio/emberscreencasts-checkout-screenshot.png",
+    "preview": "https://gyazo.com/4031da198f897a24219eef5ab051d5b9"
+  }
+]
