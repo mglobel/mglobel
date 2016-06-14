@@ -1,38 +1,13 @@
 [
   {
-    "title": "1st page ranked SEO pages.",
+    "title": "Instant search results with Algolia.",
     "description": 0,
-    "business": "MyTennisLessons",
-    "url": "https://mytennislessons.com/locations/austin-tennis-lessons",
-    "role": "Rails Developer, Project Manager",
-    "tags": "SEO",
-    "technology": "['rails']",
-    "screenshot": "http://res.cloudinary.com/mglobel/image/upload/c_scale,w_300/v1465833461/Portfolio/mtl-landing-page-screenshot.png",
-    "preview": "https://gyazo.com/68f87cfb216d60845d95f3d538a29943",
-    "released": 2013
-  },
-  {
-    "title": "SEO Pages with search results.",
-    "description": "FitnessTrainer.com SEO landing page search results.",
-    "business": "FitnessTrainer",
-    "url": "http://fitnesstrainer.com/austin-tx/personal-trainer",
-    "role": "Project Manager",
-    "tags": "Search, SEO",
-    "technology": "['algolia', 'rails', 'cdn']",
-    "screenshot": "http://res.cloudinary.com/mglobel/image/upload/c_scale,w_300/v1465833474/Portfolio/ft-landing-page-screenshot.png",
-    "preview": "https://gyazo.com/2c7b180f62b8d0419ccca85a8145d5c4",
-    "released": 2015
-  },
-  {
-    "title": "Monthly subscriber checkout.",
-    "description": "Monthly subscription sign-up form with custom Stripe integration",
     "business": "EmberScreencasts",
-    "url": "https://www.emberscreencasts.com/sales",
-    "role": "Rails Developer, JS Developer",
-    "tags": "E-commerce, Subscription Billing",
-    "technology": "['stripe', 'rails', 'jquery']",
-    "screenshot": "http://res.cloudinary.com/mglobel/image/upload/c_scale,w_300/v1465833505/Portfolio/emberscreencasts-checkout-screenshot.png",
-    "preview": "https://gyazo.com/4031da198f897a24219eef5ab051d5b9",
+    "url": "https://www.emberscreencasts.com/search?q=Ember%20Data%202.0&hPP=20&idx=Post_production&p=0&is_v=1",
+    "role": "Rails Developer, JS Developer, Project Manger",
+    "screenshot": "http://res.cloudinary.com/mglobel/image/upload/c_scale,w_300/v1465934077/Portfolio/emberscreencasts-search-screenshot.png",
+    "tags": "Search",
+    "technology": "['algolia', 'instantsearch.js']",
     "released": 2016
   },
   {
@@ -47,26 +22,27 @@
     "released": 2016
   },
   {
-    "title": "Instant search results with Algolia.",
-    "description": 0,
+    "title": "Monthly subscriber checkout.",
+    "description": "Monthly subscription sign-up form with custom Stripe integration",
     "business": "EmberScreencasts",
-    "url": "https://www.emberscreencasts.com/search?q=Ember%20Data%202.0&hPP=20&idx=Post_production&p=0&is_v=1",
-    "role": "Rails Developer, JS Developer, Project Manger",
-    "screenshot": "http://res.cloudinary.com/mglobel/image/upload/c_scale,w_300/v1465934077/Portfolio/emberscreencasts-search-screenshot.png",
-    "tags": "Search",
-    "technology": "['algolia', 'instantsearch.js']",
+    "url": "https://www.emberscreencasts.com/sales",
+    "role": "Rails Developer, JS Developer",
+    "tags": "E-commerce, Subscription Billing",
+    "technology": "['stripe', 'rails', 'jquery']",
+    "screenshot": "http://res.cloudinary.com/mglobel/image/upload/c_scale,w_300/v1465833505/Portfolio/emberscreencasts-checkout-screenshot.png",
+    "preview": "https://gyazo.com/4031da198f897a24219eef5ab051d5b9",
     "released": 2016
   },
   {
-    "title": "Admin panels for marketplace user management.",
+    "title": "Hubspot CRM and marketing integration.",
     "description": 0,
     "business": "MyTennisLessons",
-    "role": "Rails Developer, Project Manager",
-    "url": "http://activeadmin.info/",
-    "screenshot": "http://res.cloudinary.com/mglobel/image/upload/c_scale,w_300/v1465934791/Portfolio/mtl-admin-screenshot.png",
-    "tags": "Admin, Reporting, CRM",
-    "technology": "['active-admin', 'rails']",
-    "released": 2013
+    "role": "CRM Developer, Project Manager",
+    "url": "http://www.hubspot.com/",
+    "screenshot": "http://res.cloudinary.com/mglobel/image/upload/c_scale,w_300/v1465945736/Portfolio/mtl-hubspot-screenshot.png",
+    "tags": "Email, Marketing, Zapier",
+    "technology": "['hubspot', 'rails', 'zapier']",
+    "released": 2016
   },
   {
     "title": "Marketing accesible email templates and content.",
@@ -91,14 +67,39 @@
     "released": 2015
   },
   {
-    "title": "Hubspot CRM and marketing integration.",
+    "title": "SEO Pages with search results.",
+    "description": "FitnessTrainer.com SEO landing page search results.",
+    "business": "FitnessTrainer",
+    "url": "http://fitnesstrainer.com/austin-tx/personal-trainer",
+    "role": "Project Manager",
+    "tags": "Search, SEO",
+    "technology": "['algolia', 'rails', 'cdn']",
+    "screenshot": "http://res.cloudinary.com/mglobel/image/upload/c_scale,w_300/v1465833474/Portfolio/ft-landing-page-screenshot.png",
+    "preview": "https://gyazo.com/2c7b180f62b8d0419ccca85a8145d5c4",
+    "released": 2015
+  },
+  {
+    "title": "1st page ranked SEO pages.",
     "description": 0,
     "business": "MyTennisLessons",
-    "role": "CRM Developer, Project Manager",
-    "url": "http://www.hubspot.com/",
-    "screenshot": "http://res.cloudinary.com/mglobel/image/upload/c_scale,w_300/v1465945736/Portfolio/mtl-hubspot-screenshot.png",
-    "tags": "Email, Marketing, Zapier",
-    "technology": "['hubspot', 'rails', 'zapier']",
-    "released": 2016
+    "url": "https://mytennislessons.com/locations/austin-tennis-lessons",
+    "role": "Rails Developer, Project Manager",
+    "tags": "SEO",
+    "technology": "['rails']",
+    "screenshot": "http://res.cloudinary.com/mglobel/image/upload/c_scale,w_300/v1465833461/Portfolio/mtl-landing-page-screenshot.png",
+    "preview": "https://gyazo.com/68f87cfb216d60845d95f3d538a29943",
+    "released": 2013
+  },
+  
+  {
+    "title": "Admin panels for marketplace user management.",
+    "description": 0,
+    "business": "MyTennisLessons",
+    "role": "Rails Developer, Project Manager",
+    "url": "http://activeadmin.info/",
+    "screenshot": "http://res.cloudinary.com/mglobel/image/upload/c_scale,w_300/v1465934791/Portfolio/mtl-admin-screenshot.png",
+    "tags": "Admin, Reporting, CRM",
+    "technology": "['active-admin', 'rails']",
+    "released": 2013
   }
 ]
