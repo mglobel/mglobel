@@ -8,7 +8,8 @@
     "tags": "SEO",
     "technology": "['rails']",
     "screenshot": "http://res.cloudinary.com/mglobel/image/upload/c_scale,w_300/v1465833461/Portfolio/mtl-landing-page-screenshot.png",
-    "preview": "https://gyazo.com/68f87cfb216d60845d95f3d538a29943"
+    "preview": "https://gyazo.com/68f87cfb216d60845d95f3d538a29943",
+    "released": 2013
   },
   {
     "title": "SEO Pages with search results.",
@@ -19,7 +20,8 @@
     "tags": "Search, SEO",
     "technology": "['algolia', 'rails', 'cdn']",
     "screenshot": "http://res.cloudinary.com/mglobel/image/upload/c_scale,w_300/v1465833474/Portfolio/ft-landing-page-screenshot.png",
-    "preview": "https://gyazo.com/2c7b180f62b8d0419ccca85a8145d5c4"
+    "preview": "https://gyazo.com/2c7b180f62b8d0419ccca85a8145d5c4",
+    "released": 2015
   },
   {
     "title": "Monthly subscriber checkout.",
@@ -30,7 +32,8 @@
     "tags": "E-commerce, Subscription Billing",
     "technology": "['stripe', 'rails', 'jquery']",
     "screenshot": "http://res.cloudinary.com/mglobel/image/upload/c_scale,w_300/v1465833505/Portfolio/emberscreencasts-checkout-screenshot.png",
-    "preview": "https://gyazo.com/4031da198f897a24219eef5ab051d5b9"
+    "preview": "https://gyazo.com/4031da198f897a24219eef5ab051d5b9",
+    "released": 2016
   },
   {
     "title": "Gym sign-up for summer camp.",
@@ -40,7 +43,8 @@
     "url": "https://zenfit-camps.herokuapp.com/",
     "screenshot": "http://res.cloudinary.com/mglobel/image/upload/c_scale,w_300/v1465933470/Portfolio/zenfit-summer-camp-screenshot.png",
     "tags": "E-commerce, Membership Management",
-    "technology": "['stripe', 'sinatra']"
+    "technology": "['stripe', 'sinatra']",
+    "released": 2016
   },
   {
     "title": "Instant search results with Algolia.",
@@ -50,7 +54,8 @@
     "role": "Rails Developer, JS Developer, Project Manger",
     "screenshot": "http://res.cloudinary.com/mglobel/image/upload/c_scale,w_300/v1465934077/Portfolio/emberscreencasts-search-screenshot.png",
     "tags": "Search",
-    "technology": "['algolia', 'instantsearch.js']"
+    "technology": "['algolia', 'instantsearch.js']",
+    "released": 2016
   },
   {
     "title": "Admin panels for marketplace user management.",
@@ -60,7 +65,8 @@
     "url": "http://activeadmin.info/",
     "screenshot": "http://res.cloudinary.com/mglobel/image/upload/c_scale,w_300/v1465934791/Portfolio/mtl-admin-screenshot.png",
     "tags": "Admin, Reporting, CRM",
-    "technology": "['active-admin', 'rails']"
+    "technology": "['active-admin', 'rails']",
+    "released": 2013
   },
   {
     "title": "Marketing accesible email templates and content.",
@@ -70,7 +76,8 @@
     "url": "https://sendwithus.com",
     "screenshot": "http://res.cloudinary.com/mglobel/image/upload/c_scale,w_300/v1465935352/mtl-sendwithus-screenshot.png",
     "tags": "Email, Marketing, API",
-    "technology": "['sendwithus', 'sendgrid', 'rails']"
+    "technology": "['sendwithus', 'sendgrid', 'rails']",
+    "released": 2015
   },
   {
     "title": "Custom app integration with Salesforce and Heroku",
@@ -78,9 +85,10 @@
     "business": "MyTennislessons",
     "role": "Rails Developer, Salesforce Developer, Project Manager",
     "url": "https://www.heroku.com/connect",
-    "screenshot": "http://res.cloudinary.com/mglobel/image/upload/c_scale,w_300/v1465935709/Portfolio/mtl-heroku-connect-screenshot.png",
+    "screenshot": "http://res.cloudinary.com/mglobel/image/upload/c_scale,w_300/v1465946582/Portfolio/mtl-heroku-connect.png",
     "tags": "CRM, Data Management",
-    "technology": "['salesforce', 'heroku']"
+    "technology": "['salesforce', 'heroku']",
+    "released": 2015
   },
   {
     "title": "Hubspot CRM and marketing integration.",
@@ -88,8 +96,9 @@
     "business": "MyTennisLessons",
     "role": "CRM Developer, Project Manager",
     "url": "http://www.hubspot.com/",
-    "screenshot": "http://res.cloudinary.com/mglobel/image/upload/c_scale,w_300/v1465936208/Portfolio/mtl-hubspot-screenshot.png",
+    "screenshot": "http://res.cloudinary.com/mglobel/image/upload/c_scale,w_300/v1465945736/Portfolio/mtl-hubspot-screenshot.png",
     "tags": "Email, Marketing, Zapier",
-    "technology": "['hubspot', 'rails', 'zapier']"
+    "technology": "['hubspot', 'rails', 'zapier']",
+    "released": 2016
   }
 ]
