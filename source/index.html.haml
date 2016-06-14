@@ -5,23 +5,28 @@ title: MGLobel
   = partial 'shared/contact_form'
   .container
     .hero
-      %h1
-        MGLOBEL
-      %h2
-        Hand-crafted business technology.
-      %a.button{:href => "#", "v-on:click" => "openModal"} Get in Contact
-    %nav
-      %ul
-        %li
-          = link_to 'Experience', 'experience'
-        %li
-          %a{:href => "https://www.linkedin.com/in/michaelglobel", :target => "_blank"} LinkedIn
-        %li
-          %a{:href => "https://github.com/mglobel/", :target => "_blank"} Github
-        %li
-          %a{:href => "https://twitter.com/ringmylobel", :target => "_blank"} Twitter
-        %li
-          %a{:href => "http://hypem.com/LobasaurusRex", :target => "_blank"} Jams
+      .hero-title
+        %h1
+          MGLOBEL
+        %h2
+          Hand-crafted business technology.
+        %a.button{:href => "javascript:void(0)", "v-on:click" => "openModal"} Get in Contact
+      %nav
+        %ul
+          %li
+            = link_to 'Experience', 'experience'
+          %li
+            %a{:href => "https://www.linkedin.com/in/michaelglobel", :target => "_blank"} LinkedIn
+          %li
+            %a{:href => "https://github.com/mglobel/", :target => "_blank"} Github
+          %li
+            %a{:href => "https://twitter.com/ringmylobel", :target => "_blank"} Twitter
+          %li
+            %a{:href => "http://hypem.com/LobasaurusRex", :target => "_blank"} Jams
+    %hr
+      = partial 'shared/portfolio'
+      
+
 
 :javascript
   new Vue({

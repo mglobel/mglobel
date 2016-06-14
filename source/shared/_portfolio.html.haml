@@ -1,0 +1,16 @@
+#portfolio
+  %h3 Recent Projects
+  .project-card-wrap
+    - data.portfolio.each do |project|
+      .project-card
+        %h5
+          = project.business
+        %img{src: project.screenshot}
+        %h4.title
+          = project.title
+        .subtitle
+          Role: 
+          = project.role
+        .tags
+          %small
+            = project.tags

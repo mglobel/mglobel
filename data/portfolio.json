@@ -31,5 +31,65 @@
     "technology": "['stripe', 'rails', 'jquery']",
     "screenshot": "http://res.cloudinary.com/mglobel/image/upload/c_scale,w_300/v1465833505/Portfolio/emberscreencasts-checkout-screenshot.png",
     "preview": "https://gyazo.com/4031da198f897a24219eef5ab051d5b9"
+  },
+  {
+    "title": "Gym sign-up for summer camp.",
+    "description": 0,
+    "business": "ZenFit",
+    "role": "Rails Developer, Project Lead",
+    "url": "https://zenfit-camps.herokuapp.com/",
+    "screenshot": "http://res.cloudinary.com/mglobel/image/upload/c_scale,w_300/v1465933470/Portfolio/zenfit-summer-camp-screenshot.png",
+    "tags": "E-commerce, Membership Management",
+    "technology": "['stripe', 'sinatra']"
+  },
+  {
+    "title": "Instant search results with Algolia.",
+    "description": 0,
+    "business": "EmberScreencasts",
+    "url": "https://www.emberscreencasts.com/search?q=Ember%20Data%202.0&hPP=20&idx=Post_production&p=0&is_v=1",
+    "role": "Rails Developer, JS Developer, Project Manger",
+    "screenshot": "http://res.cloudinary.com/mglobel/image/upload/c_scale,w_300/v1465934077/Portfolio/emberscreencasts-search-screenshot.png",
+    "tags": "Search",
+    "technology": "['algolia', 'instantsearch.js']"
+  },
+  {
+    "title": "Admin panels for marketplace user management.",
+    "description": 0,
+    "business": "MyTennisLessons",
+    "role": "Rails Developer, Project Manager",
+    "url": "http://activeadmin.info/",
+    "screenshot": "http://res.cloudinary.com/mglobel/image/upload/c_scale,w_300/v1465934791/Portfolio/mtl-admin-screenshot.png",
+    "tags": "Admin, Reporting, CRM",
+    "technology": "['active-admin', 'rails']"
+  },
+  {
+    "title": "Marketing accesible email templates and content.",
+    "description": 0,
+    "business": "MyTennislessons",
+    "role": "API Developer, Project Manager",
+    "url": "https://sendwithus.com",
+    "screenshot": "http://res.cloudinary.com/mglobel/image/upload/c_scale,w_300/v1465935352/mtl-sendwithus-screenshot.png",
+    "tags": "Email, Marketing, API",
+    "technology": "['sendwithus', 'sendgrid', 'rails']"
+  },
+  {
+    "title": "Custom app integration with Salesforce and Heroku",
+    "description": 0,
+    "business": "MyTennislessons",
+    "role": "Rails Developer, Salesforce Developer, Project Manager",
+    "url": "https://www.heroku.com/connect",
+    "screenshot": "http://res.cloudinary.com/mglobel/image/upload/c_scale,w_300/v1465935709/Portfolio/mtl-heroku-connect-screenshot.png",
+    "tags": "CRM, Data Management",
+    "technology": "['salesforce', 'heroku']"
+  },
+  {
+    "title": "Hubspot CRM and marketing integration.",
+    "description": 0,
+    "business": "MyTennisLessons",
+    "role": "CRM Developer, Project Manager",
+    "url": "http://www.hubspot.com/",
+    "screenshot": "http://res.cloudinary.com/mglobel/image/upload/c_scale,w_300/v1465936208/Portfolio/mtl-hubspot-screenshot.png",
+    "tags": "Email, Marketing, Zapier",
+    "technology": "['hubspot', 'rails', 'zapier']"
   }
 ]

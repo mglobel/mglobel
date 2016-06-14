@@ -1,0 +1,30 @@
+#portfolio {
+  max-width: 1200px;
+  
+  h4, h5 {
+    margin-bottom: 5px;
+  }
+  
+  .project-card-wrap {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+  }
+  
+  .project-card {
+    width: 300px;
+    padding: 5px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    
+    img {
+      max-width: 250px;
+      max-height: 250px;
+      height: auto;
+    }
+  }
+  
+}
