@@ -1,35 +1,35 @@
 [
   {
     "title": "Instant search results with Algolia.",
-    "description": 0,
+    "description": "After collecting over 500 videos of Ember.js screencasts and series, users needed a better way to find relevant videos.",
     "business": "EmberScreencasts",
     "url": "https://www.emberscreencasts.com/search?q=Ember%20Data%202.0&hPP=20&idx=Post_production&p=0&is_v=1",
     "role": "Rails Developer, JS Developer, Project Manger",
-    "screenshot": "http://res.cloudinary.com/mglobel/image/upload/c_scale,w_300/v1465934077/Portfolio/emberscreencasts-search-screenshot.png",
+    "screenshot": "http://res.cloudinary.com/mglobel/image/upload/c_scale,w_460/v1465934077/Portfolio/emberscreencasts-search-screenshot.png",
     "tags": "Search",
-    "technology": "['algolia', 'instantsearch.js']",
+    "technology": "Algolia, Instantsearch.js",
     "released": 2016
   },
   {
     "title": "Gym sign-up for summer camp.",
-    "description": 0,
+    "description": "This was a kick ass form that was made just for ZenFit.",
     "business": "ZenFit",
     "role": "Rails Developer, Project Lead",
     "url": "https://zenfit-camps.herokuapp.com/",
-    "screenshot": "http://res.cloudinary.com/mglobel/image/upload/c_scale,w_300/v1465933470/Portfolio/zenfit-summer-camp-screenshot.png",
+    "screenshot": "http://res.cloudinary.com/mglobel/image/upload/c_scale,w_460/v1465933470/Portfolio/zenfit-summer-camp-screenshot.png",
     "tags": "E-commerce, Membership Management",
-    "technology": "['stripe', 'sinatra']",
+    "technology": "Stripe Checkout, Sinatra.rb",
     "released": 2016
   },
   {
     "title": "Monthly subscriber checkout.",
-    "description": "Monthly subscription sign-up form with custom Stripe integration",
+    "description": "Emberscreencasts needed an upgrade from the basic Stripe Checkout integration. We used the Stripe Payment library for validation.",
     "business": "EmberScreencasts",
     "url": "https://www.emberscreencasts.com/sales",
     "role": "Rails Developer, JS Developer",
     "tags": "E-commerce, Subscription Billing",
-    "technology": "['stripe', 'rails', 'jquery']",
-    "screenshot": "http://res.cloudinary.com/mglobel/image/upload/c_scale,w_300/v1465833505/Portfolio/emberscreencasts-checkout-screenshot.png",
+    "technology": "Stripe API, Rails, JQuery",
+    "screenshot": "http://res.cloudinary.com/mglobel/image/upload/c_scale,w_380/v1465833505/Portfolio/emberscreencasts-checkout-screenshot.png",
     "preview": "https://gyazo.com/4031da198f897a24219eef5ab051d5b9",
     "released": 2016
   },
@@ -39,9 +39,9 @@
     "business": "MyTennisLessons",
     "role": "CRM Developer, Project Manager",
     "url": "http://www.hubspot.com/",
-    "screenshot": "http://res.cloudinary.com/mglobel/image/upload/c_scale,w_300/v1465945736/Portfolio/mtl-hubspot-screenshot.png",
-    "tags": "Email, Marketing, Zapier",
-    "technology": "['hubspot', 'rails', 'zapier']",
+    "screenshot": "http://res.cloudinary.com/mglobel/image/upload/c_scale,w_460/v1465945736/Portfolio/mtl-hubspot-screenshot.png",
+    "tags": "Email, Automation, Marketing",
+    "technology": "Hubspot, Zapier, Rails",
     "released": 2016
   },
   {
@@ -50,7 +50,7 @@
     "business": "MyTennislessons",
     "role": "API Developer, Project Manager",
     "url": "https://sendwithus.com",
-    "screenshot": "http://res.cloudinary.com/mglobel/image/upload/c_scale,w_300/v1465935352/mtl-sendwithus-screenshot.png",
+    "screenshot": "http://res.cloudinary.com/mglobel/image/upload/c_scale,w_460/v1465935352/mtl-sendwithus-screenshot.png",
     "tags": "Email, Marketing, API",
     "technology": "['sendwithus', 'sendgrid', 'rails']",
     "released": 2015
@@ -61,7 +61,7 @@
     "business": "MyTennislessons",
     "role": "Rails Developer, Salesforce Developer, Project Manager",
     "url": "https://www.heroku.com/connect",
-    "screenshot": "http://res.cloudinary.com/mglobel/image/upload/c_scale,w_300/v1465946582/Portfolio/mtl-heroku-connect.png",
+    "screenshot": "http://res.cloudinary.com/mglobel/image/upload/c_scale,w_460/v1465946582/Portfolio/mtl-heroku-connect.png",
     "tags": "CRM, Data Management",
     "technology": "['salesforce', 'heroku']",
     "released": 2015
@@ -73,8 +73,8 @@
     "url": "http://fitnesstrainer.com/austin-tx/personal-trainer",
     "role": "Project Manager",
     "tags": "Search, SEO",
-    "technology": "['algolia', 'rails', 'cdn']",
-    "screenshot": "http://res.cloudinary.com/mglobel/image/upload/c_scale,w_300/v1465833474/Portfolio/ft-landing-page-screenshot.png",
+    "technology": "Algolia, Rails, Cloudfront CDN",
+    "screenshot": "http://res.cloudinary.com/mglobel/image/upload/c_scale,w_420/v1465833474/Portfolio/ft-landing-page-screenshot.png",
     "preview": "https://gyazo.com/2c7b180f62b8d0419ccca85a8145d5c4",
     "released": 2015
   },
@@ -85,8 +85,8 @@
     "url": "https://mytennislessons.com/locations/austin-tennis-lessons",
     "role": "Rails Developer, Project Manager",
     "tags": "SEO",
-    "technology": "['rails']",
-    "screenshot": "http://res.cloudinary.com/mglobel/image/upload/c_scale,w_300/v1465833461/Portfolio/mtl-landing-page-screenshot.png",
+    "technology": "Rails, Cloudfront CDN",
+    "screenshot": "http://res.cloudinary.com/mglobel/image/upload/c_scale,w_400/v1465833461/Portfolio/mtl-landing-page-screenshot.png",
     "preview": "https://gyazo.com/68f87cfb216d60845d95f3d538a29943",
     "released": 2013
   },
@@ -97,9 +97,9 @@
     "business": "MyTennisLessons",
     "role": "Rails Developer, Project Manager",
     "url": "http://activeadmin.info/",
-    "screenshot": "http://res.cloudinary.com/mglobel/image/upload/c_scale,w_300/v1465934791/Portfolio/mtl-admin-screenshot.png",
+    "screenshot": "http://res.cloudinary.com/mglobel/image/upload/c_scale,w_400/v1465934791/Portfolio/mtl-admin-screenshot.png",
     "tags": "Admin, Reporting, CRM",
-    "technology": "['active-admin', 'rails']",
+    "technology": "Rails, Active-Admin",
     "released": 2013
   }
 ]
