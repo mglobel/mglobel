@@ -36,9 +36,28 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0,0,0,.6);
-    overflow: auto;
+    display: flex;
     justify-content: center;
     align-items: center;
+  }
+  
+  .project-details {
+    z-index: 2;
+    background-color: #fefefe;
+    width: 80%;
+    height: 60%;
+    padding: 20px;
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-around;
+    @media screen and (max-width: 900px) {
+      flex-direction: column;
+      img {
+        padding-top: 20px;
+        max-width: 250px;
+        height: auto;
+      }
+    }
   }
   
 }

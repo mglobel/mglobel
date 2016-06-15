@@ -1,15 +1,43 @@
 #portfolio
   %script#modal-template{:type => "x/template"}
     .project-modal-wrapper{"data-modal" => "true", "v-on:click" => "closeProjectModal"}
-      %span 
-        {{index}}- {{ title }}
+      .project-details
+        .project-title
+          %h1{style: 'margin: 0px;'} {{ business }}
+          %h3{style: 'margin-bottom: 0px;'} {{ title }}
+          %h4{style: 'margin: 0px;'} {{ role }}
+          %div
+            Tech: {{ technology }}
+          %div
+            Tags: {{ tags }}
+          %div
+            From: {{ released }}
+          %div 
+            %a{href: "{{ url }}", target: "blank"} View online >
+        .screenshot
+          %img{src: "{{screenshot}}"}
+          // v-if private
+          // this project is an internal business application. 
+          // learn more about the tools that made it possible 
+          // by clicking view project.
+          // 
+          // Visit SendWithUs.com
         
   %h3 Recent Projects
   .project-card-wrap
     - data.portfolio.each_with_index do |project, i|
     
       .project-modal{"v-show": "this.displayedProject == #{i}"}
-        %project{":index": i, title: project.title}
+        %project{":index": i, 
+          title: project.title, 
+          screenshot: project.screenshot, 
+          released: project.released,
+          role: project.role,
+          business: project.business,
+          tags: project.tags,
+          technology: project.technology,
+          description: project.description,
+          url: project.url}
         
       .project-card{"v-on:click": "displayProjectModal(#{i})"}
         %h5
@@ -25,13 +53,12 @@
             #{project.tags} 
         .released
           %small Released: #{project.released}
-        // this project is an internal business application. learn more about the tools that made 
-        // it possible here:
+
 
 :javascript 
   Vue.component('project', {
     template: `#modal-template`,
-    props: ['index', 'title'],
+    props: ['index', 'title', 'screenshot', 'released', 'role', 'business', 'tags', 'technology', 'description', 'url'],
     methods: {
       closeProjectModal: function(e) {
         if (e.target.className == 'project-modal-wrapper') {
