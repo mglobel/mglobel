@@ -52,7 +52,7 @@
     "url": "https://sendwithus.com",
     "screenshot": "http://res.cloudinary.com/mglobel/image/upload/c_scale,w_460/v1465935352/mtl-sendwithus-screenshot.png",
     "tags": "Email, Marketing, API",
-    "technology": "['sendwithus', 'sendgrid', 'rails']",
+    "technology": "SendWithUs, SendGrid, Rails",
     "released": 2015
   },
   {
@@ -63,7 +63,7 @@
     "url": "https://www.heroku.com/connect",
     "screenshot": "http://res.cloudinary.com/mglobel/image/upload/c_scale,w_460/v1465946582/Portfolio/mtl-heroku-connect.png",
     "tags": "CRM, Data Management",
-    "technology": "['salesforce', 'heroku']",
+    "technology": "Salesforce, Heroku, PostgreSQL",
     "released": 2015
   },
   {
@@ -97,7 +97,7 @@
     "business": "MyTennisLessons",
     "role": "Rails Developer, Project Manager",
     "url": "http://activeadmin.info/",
-    "screenshot": "http://res.cloudinary.com/mglobel/image/upload/c_scale,w_400/v1465934791/Portfolio/mtl-admin-screenshot.png",
+    "screenshot": "http://res.cloudinary.com/mglobel/image/upload/c_scale,w_420/v1465967161/Portfolio/mtl-admin-screenshot.png",
     "tags": "Admin, Reporting, CRM",
     "technology": "Rails, Active-Admin",
     "released": 2013
