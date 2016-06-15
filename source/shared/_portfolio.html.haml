@@ -59,6 +59,13 @@
   Vue.component('project', {
     template: `#modal-template`,
     props: ['index', 'title', 'screenshot', 'released', 'role', 'business', 'tags', 'technology', 'description', 'url'],
+    ready: function () {
+      document.addEventListener("keydown", (e) => {
+        if (e.keyCode == 27) {
+          this.$dispatch('closeProjectModal', null)
+        }
+      });
+    },
     methods: {
       closeProjectModal: function(e) {
         if (e.target.className == 'project-modal-wrapper') {

@@ -38,6 +38,11 @@ title: MGLobel
       if(window.location.hash == '#contact-form') {
         this.$set('displayForm', 'block')
       }
+      document.addEventListener("keydown", (e) => {
+        if (e.keyCode == 27) {
+          this.$set('displayForm', 'none')
+        }
+      });
     },
     methods: {
       openModal: function () {
