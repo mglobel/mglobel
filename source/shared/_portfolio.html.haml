@@ -1,8 +1,17 @@
 #portfolio
+  %script#modal-template{:type => "x/template"}
+    .project-modal-wrapper{"data-modal" => "true", "v-on:click" => "closeProjectModal"}
+      %span 
+        {{index}}- {{ title }}
+        
   %h3 Recent Projects
   .project-card-wrap
-    - data.portfolio.each do |project|
-      .project-card
+    - data.portfolio.each_with_index do |project, i|
+    
+      .project-modal{"v-show": "this.displayedProject == #{i}"}
+        %project{":index": i, title: project.title}
+        
+      .project-card{"v-on:click": "displayProjectModal(#{i})"}
         %h5
           = project.business
         %img{src: project.screenshot}
@@ -16,3 +25,35 @@
             #{project.tags} 
         .released
           %small Released: #{project.released}
+        // this project is an internal business application. learn more about the tools that made 
+        // it possible here:
+
+:javascript 
+  Vue.component('project', {
+    template: `#modal-template`,
+    props: ['index', 'title'],
+    methods: {
+      closeProjectModal: function(e) {
+        if (e.target.className == 'project-modal-wrapper') {
+          this.$dispatch('closeProjectModal', null)
+        }
+      }
+    }
+  })
+  
+  new Vue({
+    el: '#portfolio',
+    data: {
+      displayedProject: null
+    },
+    methods: {
+      displayProjectModal: function(project) {
+        this.$set('displayedProject', project)
+      }
+    },
+    events: {
+      'closeProjectModal': function () {
+        this.$set('displayedProject', null)
+      }
+    }
+  })
