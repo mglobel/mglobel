@@ -2,17 +2,16 @@
   %script#modal-template{:type => "x/template"}
     .project-modal-wrapper{"data-modal" => "true", "v-on:click" => "closeProjectModal"}
       .project-details
-        .project-title
+        .project-summary
           %h1{style: 'margin: 0px;'} {{ business }}
-          %h3{style: 'margin-bottom: 0px;'} {{ title }}
-          %h4{style: 'margin: 0px;'} {{ role }}
-          %div
+          %h2 {{ released }}
+          %h3{style: 'margin-top: 5px; margin-bottom: 5px;'} {{ title }}
+          %h4{style: 'margin-top: 2px; padding-bottom: 10px;'} {{ role }}
+          .section
             Tech: {{ technology }}
-          %div
+          .section
             Tags: {{ tags }}
-          %div
-            From: {{ released }}
-          %div 
+          .section{style: 'padding-top: 15px;'}
             %a{href: "{{ url }}", target: "blank"} View online >
         .screenshot
           %img{src: "{{screenshot}}"}
@@ -48,9 +47,6 @@
         .subtitle
           Role: 
           = project.role
-        .tags
-          %small
-            #{project.tags} 
         .released
           %small Released: #{project.released}
 
