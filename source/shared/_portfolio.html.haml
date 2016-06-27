@@ -26,7 +26,7 @@
   .project-card-wrap
     - data.portfolio.each_with_index do |project, i|
     
-      .project-modal{"v-show": "this.displayedProject == #{i}"}
+      .project-modal{"v-if": "this.displayedProject == #{i}"}
         %project{":index": i, 
           title: project.title, 
           screenshot: project.screenshot, 
