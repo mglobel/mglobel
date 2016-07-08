@@ -8,11 +8,11 @@
           %h3{style: 'margin-top: 5px; margin-bottom: 5px;'} {{ title }}
           %h4{style: 'margin-top: 2px; padding-bottom: 10px;'} {{ role }}
           .section
-            Tech: {{ technology }}
+            <b>Tech:</b> {{ technology }}
           .section
-            Tags: {{ tags }}
-          .section{style: 'margin-top: 3px; max-width: 400px;'}
-            Description: {{ description }}
+            <b>Tags:</b> {{ tags }}
+          .section{style: 'margin-top: 8px; max-width: 400px;'}
+            <b>Description:</b> {{ description }}
           .section{style: 'padding-top: 15px;'}
             %a{href: "{{ url }}", target: "blank"} View online >
         .screenshot
