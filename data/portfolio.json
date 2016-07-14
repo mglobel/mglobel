@@ -24,7 +24,7 @@
   },
   {
     "title": "Gym sign-up for summer camp.",
-    "description": "This was a kick ass form that was made just for ZenFit.",
+    "description": "Simple stripe integration to create a sign-up page for ZenFit summer kids camp.",
     "business": "ZenFit",
     "role": "Rails Developer, Project Lead",
     "url": "https://zenfit-camps.herokuapp.com/",
