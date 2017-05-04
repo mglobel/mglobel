@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+    <meta content='width=device-width, initial-scale=1' name='viewport'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100' rel='stylesheet' type='text/css'>
+    <title>MGLobel</title>
+    <link href="/stylesheets/application.css" rel="stylesheet" />
+    <script src="/javascripts/all.js"></script>
+    <script src="/javascripts/vue.js"></script>
+    <link href="/stylesheets/components/contact_form.css" rel="stylesheet" />
+  </head>
+  <body class='index'>
+    <div id='app'>
+      <span class='modal-background' data-modal='true' v-bind:style='{ display: displayForm }' v-on:click='closeModal'>
+        <div class='modal-container'>
+          <div class='form-header'>
+            <h2>Contact me about a project.</h2>
+            <div class='small'>
+              I am currently available on a per-day or project basis. I aim to find easy wins that can be
+              delivered quickly.
+            </div>
+            <div class='small'>
+              Reach out using the form below
+              or at <a href='mailto:mglobel@gmail.com'>mglobel@gmail.com</a>
+              to start a conversation.
+            </div>
+          </div>
+          <form action='https://formspree.io/mglobelpvfu9zlr@robot.zapier.com' method='POST'>
+            <div class='form-group'>
+              <label>
+                NAME
+              </label>
+              <input name='name' placeholder='Name' required='true' type='text'>
+            </div>
+            <div class='form-group'>
+              <label>
+                EMAIL
+              </label>
+              <input name='_replyto' placeholder='Email' required='true' type='email'>
+            </div>
+            <div class='form-group'>
+              <label>
+                PHONE
+              </label>
+              <input name='phone' placeholder='Phone (Optional)' type='telephone'>
+            </div>
+            <div class='form-group'>
+              <label>
+                PROJECT
+              </label>
+              <select name='organization-level' required='true'>
+                <option>Select the type of project...</option>
+                <option value='personal-project'>Personal Project</option>
+                <option value='small-business'>Small Business</option>
+                <option value='startup'>Startup</option>
+                <option value='enterprise'>Enterprise</option>
+                <option value='not-for-profit'>Non-Profit/Community Initiative</option>
+                <option value='chat'>Just want to chat</option>
+              </select>
+            </div>
+            <input name='_next' type='hidden' value='http://mglobel.com/thanks'>
+            <input name='_cc' type='hidden' value='mglobel@gmail.com'>
+            <input name='_format' style='display:none' type='text' value='plain'>
+            <input name='_gotcha' style='display:none' type='text'>
+            <input class='submit-form' type='submit' value='Contact Me'>
+          </form>
+        </div>
+      </span>
+      <div class='container'>
+        <div class='hero'>
+          <div class='hero-title'>
+            <h1>
+              MGLOBEL
+            </h1>
+            <h2>
+              Hand-crafted business technology.
+            </h2>
+            <a class='button' href='javascript:void(0)' v-on:click='openModal'>Get in Contact</a>
+          </div>
+          <nav>
+            <ul>
+              <li>
+                <a href='/experience' target='_blank'>About</a>
+              </li>
+              <li>
+                <a href='https://www.linkedin.com/in/michaelglobel' target='_blank'>LinkedIn</a>
+              </li>
+              <li>
+                <a href='https://github.com/mglobel/' target='_blank'>Github</a>
+              </li>
+              <li>
+                <a href='https://twitter.com/ringmylobel' target='_blank'>Twitter</a>
+              </li>
+              <li>
+                <a href='http://hypem.com/LobasaurusRex' target='_blank'>Jams</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <hr>
+          <div id='portfolio'>
+            <script id='modal-template' type='x/template'>
+              <div class='project-modal-wrapper' data-modal='true' v-on:click='closeProjectModal'>
+                <div class='project-details'>
+                  <div class='project-summary'>
+                    <h1 style='margin: 0px;'>{{ business }}</h1>
+                    <h2>{{ released }}</h2>
+                    <h3 style='margin-top: 5px; margin-bottom: 5px;'>{{ title }}</h3>
+                    <h4 style='margin-top: 2px; padding-bottom: 10px;'>{{ role }}</h4>
+                    <div class='section'>
+                      <b>Tech:</b> {{ technology }}
+                    </div>
+                    <div class='section'>
+                      <b>Tags:</b> {{ tags }}
+                    </div>
+                    <div class='section' style='margin-top: 8px; max-width: 400px;'>
+                      <b>Description:</b> {{ description }}
+                    </div>
+                    <div class='section' style='padding-top: 15px;'>
+                      <a href='{{ url }}' target='blank'>View online ></a>
+                    </div>
+                  </div>
+                  <div class='screenshot'>
+                    <img src='{{screenshot}}'>
+                    <!-- / v-if private -->
+                    <!-- / this project is an internal business application. -->
+                    <!-- / learn more about the tools that made it possible -->
+                    <!-- / by clicking view project. -->
+                    <!-- / -->
+                    <!-- / Visit SendWithUs.com -->
+                  </div>
+                </div>
+              </div>
+            </script>
+            <h3>Recent Projects</h3>
+            <div class='project-card-wrap'>
+              <div class='project-modal' v-if='this.displayedProject == 0'>
+                <project :index='0' business='Casper Fermentables' description="Casper Fermentables started selling pickles and probiotic drinks at a local farmer's market and wanted a simple site with a delivery option." released='2016' role='JS Developer, Ruby Developer' screenshot='http://res.cloudinary.com/mglobel/image/upload/c_scale,w_460/v1469724334/Portfolio/Screenshot_2016-07-28_11.45.22.png' tags='Marketing' technology='VueJS, Middleman, Formspree' title='Marketing site with Vue Router' url='http://casperfermentables.com'></project>
+              </div>
+              <div class='project-card' v-on:click='displayProjectModal(0)'>
+                <h5>
+                  Casper Fermentables
+                </h5>
+                <img src='http://res.cloudinary.com/mglobel/image/upload/c_scale,w_460/v1469724334/Portfolio/Screenshot_2016-07-28_11.45.22.png'>
+                <h4 class='title'>
+                  Marketing site with Vue Router
+                </h4>
+                <div class='subtitle'>
+                  Role:
+                  JS Developer, Ruby Developer
+                </div>
+                <div class='released'>
+                  <small>Released: 2016</small>
+                </div>
+              </div>
+              <div class='project-modal' v-if='this.displayedProject == 1'>
+                <project :index='1' business='MyTennisLessons' description='After two years, it was time to give the MyTennisLessons checkout a re-haul. React made creating robust order summaries and coupon widgets a breeze.' released='2016' role='ReactJS Developer, Rails Developer' screenshot='http://res.cloudinary.com/mglobel/image/upload/c_scale,w_460/v1467391898/mtl-booking-flow-screenshot.png' tags='Ecommerce' technology='ReactJS, Rails, AJAX' title='React and Rails E-Commerce Checkout' url='https://www.mytennislessons.com/profile/zach-b'></project>
+              </div>
+              <div class='project-card' v-on:click='displayProjectModal(1)'>
+                <h5>
+                  MyTennisLessons
+                </h5>
+                <img src='http://res.cloudinary.com/mglobel/image/upload/c_scale,w_460/v1467391898/mtl-booking-flow-screenshot.png'>
+                <h4 class='title'>
+                  React and Rails E-Commerce Checkout
+                </h4>
+                <div class='subtitle'>
+                  Role:
+                  ReactJS Developer, Rails Developer
+                </div>
+                <div class='released'>
+                  <small>Released: 2016</small>
+                </div>
+              </div>
+              <div class='project-modal' v-if='this.displayedProject == 2'>
+                <project :index='2' business='EmberScreencasts' description='After collecting over 500 videos of Ember.js screencasts and series, users needed a better way to find relevant videos.' released='2016' role='Rails Developer, JS Developer, Project Manger' screenshot='http://res.cloudinary.com/mglobel/image/upload/c_scale,w_460/v1465934077/Portfolio/emberscreencasts-search-screenshot.png' tags='Search' technology='Algolia, Instantsearch.js' title='Instant search results with Algolia.' url='https://www.emberscreencasts.com/search?q=Ember%20Data%202.0&amp;hPP=20&amp;idx=Post_production&amp;p=0&amp;is_v=1'></project>
+              </div>
+              <div class='project-card' v-on:click='displayProjectModal(2)'>
+                <h5>
+                  EmberScreencasts
+                </h5>
+                <img src='http://res.cloudinary.com/mglobel/image/upload/c_scale,w_460/v1465934077/Portfolio/emberscreencasts-search-screenshot.png'>
+                <h4 class='title'>
+                  Instant search results with Algolia.
+                </h4>
+                <div class='subtitle'>
+                  Role:
+                  Rails Developer, JS Developer, Project Manger
+                </div>
+                <div class='released'>
+                  <small>Released: 2016</small>
+                </div>
+              </div>
+              <div class='project-modal' v-if='this.displayedProject == 3'>
+                <project :index='3' business='ZenFit' description='Simple stripe integration to create a sign-up page for ZenFit summer kids camp.' released='2016' role='Rails Developer, Project Lead' screenshot='http://res.cloudinary.com/mglobel/image/upload/c_scale,w_460/v1465933470/Portfolio/zenfit-summer-camp-screenshot.png' tags='E-commerce, Membership Management' technology='Stripe Checkout, Sinatra.rb' title='Gym sign-up for summer camp.' url='https://zenfit-camps.herokuapp.com/'></project>
+              </div>
+              <div class='project-card' v-on:click='displayProjectModal(3)'>
+                <h5>
+                  ZenFit
+                </h5>
+                <img src='http://res.cloudinary.com/mglobel/image/upload/c_scale,w_460/v1465933470/Portfolio/zenfit-summer-camp-screenshot.png'>
+                <h4 class='title'>
+                  Gym sign-up for summer camp.
+                </h4>
+                <div class='subtitle'>
+                  Role:
+                  Rails Developer, Project Lead
+                </div>
+                <div class='released'>
+                  <small>Released: 2016</small>
+                </div>
+              </div>
+              <div class='project-modal' v-if='this.displayedProject == 4'>
+                <project :index='4' business='EmberScreencasts' description='Emberscreencasts needed an upgrade from the basic Stripe Checkout integration. We used the Stripe Payment library for validation.' released='2016' role='Rails Developer, JS Developer' screenshot='http://res.cloudinary.com/mglobel/image/upload/c_scale,w_380/v1465833505/Portfolio/emberscreencasts-checkout-screenshot.png' tags='E-commerce, Subscription Billing' technology='Stripe API, Rails, JQuery' title='Monthly subscriber checkout.' url='https://www.emberscreencasts.com/sales'></project>
+              </div>
+              <div class='project-card' v-on:click='displayProjectModal(4)'>
+                <h5>
+                  EmberScreencasts
+                </h5>
+                <img src='http://res.cloudinary.com/mglobel/image/upload/c_scale,w_380/v1465833505/Portfolio/emberscreencasts-checkout-screenshot.png'>
+                <h4 class='title'>
+                  Monthly subscriber checkout.
+                </h4>
+                <div class='subtitle'>
+                  Role:
+                  Rails Developer, JS Developer
+                </div>
+                <div class='released'>
+                  <small>Released: 2016</small>
+                </div>
+              </div>
+              <div class='project-modal' v-if='this.displayedProject == 5'>
+                <project :index='5' business='MyTennisLessons' description='0' released='2016' role='CRM Developer, Project Manager' screenshot='http://res.cloudinary.com/mglobel/image/upload/c_scale,w_460/v1465945736/Portfolio/mtl-hubspot-screenshot.png' tags='Email, Automation, Marketing' technology='Hubspot, Zapier, Rails' title='Hubspot CRM and marketing integration.' url='http://www.hubspot.com/'></project>
+              </div>
+              <div class='project-card' v-on:click='displayProjectModal(5)'>
+                <h5>
+                  MyTennisLessons
+                </h5>
+                <img src='http://res.cloudinary.com/mglobel/image/upload/c_scale,w_460/v1465945736/Portfolio/mtl-hubspot-screenshot.png'>
+                <h4 class='title'>
+                  Hubspot CRM and marketing integration.
+                </h4>
+                <div class='subtitle'>
+                  Role:
+                  CRM Developer, Project Manager
+                </div>
+                <div class='released'>
+                  <small>Released: 2016</small>
+                </div>
+              </div>
+              <div class='project-modal' v-if='this.displayedProject == 6'>
+                <project :index='6' business='MyTennislessons' description='0' released='2015' role='API Developer, Project Manager' screenshot='http://res.cloudinary.com/mglobel/image/upload/c_scale,w_460/v1465935352/mtl-sendwithus-screenshot.png' tags='Email, Marketing, API' technology='SendWithUs, SendGrid, Rails' title='Marketing accesible email templates and content.' url='https://sendwithus.com'></project>
+              </div>
+              <div class='project-card' v-on:click='displayProjectModal(6)'>
+                <h5>
+                  MyTennislessons
+                </h5>
+                <img src='http://res.cloudinary.com/mglobel/image/upload/c_scale,w_460/v1465935352/mtl-sendwithus-screenshot.png'>
+                <h4 class='title'>
+                  Marketing accesible email templates and content.
+                </h4>
+                <div class='subtitle'>
+                  Role:
+                  API Developer, Project Manager
+                </div>
+                <div class='released'>
+                  <small>Released: 2015</small>
+                </div>
+              </div>
+              <div class='project-modal' v-if='this.displayedProject == 7'>
+                <project :index='7' business='MyTennislessons' description='0' released='2015' role='Rails Developer, Salesforce Developer, Project Manager' screenshot='http://res.cloudinary.com/mglobel/image/upload/c_scale,w_460/v1465946582/Portfolio/mtl-heroku-connect.png' tags='CRM, Data Management' technology='Salesforce, Heroku, PostgreSQL' title='Custom app integration with Salesforce and Heroku' url='https://www.heroku.com/connect'></project>
+              </div>
+              <div class='project-card' v-on:click='displayProjectModal(7)'>
+                <h5>
+                  MyTennislessons
+                </h5>
+                <img src='http://res.cloudinary.com/mglobel/image/upload/c_scale,w_460/v1465946582/Portfolio/mtl-heroku-connect.png'>
+                <h4 class='title'>
+                  Custom app integration with Salesforce and Heroku
+                </h4>
+                <div class='subtitle'>
+                  Role:
+                  Rails Developer, Salesforce Developer, Project Manager
+                </div>
+                <div class='released'>
+                  <small>Released: 2015</small>
+                </div>
+              </div>
+              <div class='project-modal' v-if='this.displayedProject == 8'>
+                <project :index='8' business='FitnessTrainer' description='FitnessTrainer.com SEO landing page search results.' released='2015' role='Project Manager' screenshot='http://res.cloudinary.com/mglobel/image/upload/c_scale,w_420/v1465833474/Portfolio/ft-landing-page-screenshot.png' tags='Search, SEO' technology='Algolia, Rails, Cloudfront CDN' title='SEO Pages with search results.' url='http://fitnesstrainer.com/austin-tx/personal-trainer'></project>
+              </div>
+              <div class='project-card' v-on:click='displayProjectModal(8)'>
+                <h5>
+                  FitnessTrainer
+                </h5>
+                <img src='http://res.cloudinary.com/mglobel/image/upload/c_scale,w_420/v1465833474/Portfolio/ft-landing-page-screenshot.png'>
+                <h4 class='title'>
+                  SEO Pages with search results.
+                </h4>
+                <div class='subtitle'>
+                  Role:
+                  Project Manager
+                </div>
+                <div class='released'>
+                  <small>Released: 2015</small>
+                </div>
+              </div>
+              <div class='project-modal' v-if='this.displayedProject == 9'>
+                <project :index='9' business='MyTennisLessons' description='0' released='2013' role='Rails Developer, Project Manager' screenshot='http://res.cloudinary.com/mglobel/image/upload/c_scale,w_400/v1465833461/Portfolio/mtl-landing-page-screenshot.png' tags='SEO' technology='Rails, Cloudfront CDN' title='1st page ranked SEO pages.' url='https://mytennislessons.com/locations/austin-tennis-lessons'></project>
+              </div>
+              <div class='project-card' v-on:click='displayProjectModal(9)'>
+                <h5>
+                  MyTennisLessons
+                </h5>
+                <img src='http://res.cloudinary.com/mglobel/image/upload/c_scale,w_400/v1465833461/Portfolio/mtl-landing-page-screenshot.png'>
+                <h4 class='title'>
+                  1st page ranked SEO pages.
+                </h4>
+                <div class='subtitle'>
+                  Role:
+                  Rails Developer, Project Manager
+                </div>
+                <div class='released'>
+                  <small>Released: 2013</small>
+                </div>
+              </div>
+              <div class='project-modal' v-if='this.displayedProject == 10'>
+                <project :index='10' business='MyTennisLessons' description='0' released='2013' role='Rails Developer, Project Manager' screenshot='http://res.cloudinary.com/mglobel/image/upload/c_scale,w_420/v1465967161/Portfolio/mtl-admin-screenshot.png' tags='Admin, Reporting, CRM' technology='Rails, Active-Admin' title='Admin panels for marketplace user management.' url='http://activeadmin.info/'></project>
+              </div>
+              <div class='project-card' v-on:click='displayProjectModal(10)'>
+                <h5>
+                  MyTennisLessons
+                </h5>
+                <img src='http://res.cloudinary.com/mglobel/image/upload/c_scale,w_420/v1465967161/Portfolio/mtl-admin-screenshot.png'>
+                <h4 class='title'>
+                  Admin panels for marketplace user management.
+                </h4>
+                <div class='subtitle'>
+                  Role:
+                  Rails Developer, Project Manager
+                </div>
+                <div class='released'>
+                  <small>Released: 2013</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <script>
+            Vue.component('project', {
+              template: `#modal-template`,
+              props: ['index', 'title', 'screenshot', 'released', 'role', 'business', 'tags', 'technology', 'description', 'url'],
+              ready: function () {
+                document.addEventListener("keydown", (e) => {
+                  if (e.keyCode == 27) {
+                    this.$dispatch('closeProjectModal', null)
+                  }
+                });
+              },
+              methods: {
+                closeProjectModal: function(e) {
+                  if (e.target.className == 'project-modal-wrapper') {
+                    this.$dispatch('closeProjectModal', null)
+                  }
+                }
+              }
+            })
+            
+            new Vue({
+              el: '#portfolio',
+              data: {
+                displayedProject: null
+              },
+              methods: {
+                displayProjectModal: function(project) {
+                  this.$set('displayedProject', project)
+                }
+              },
+              events: {
+                'closeProjectModal': function () {
+                  this.$set('displayedProject', null)
+                }
+              }
+            })
+          </script>
+        </hr>
+        <footer>
+          <small>
+            MGLOBEL LLC &copy; 2017
+            <br>
+            Based in Austin, TX
+            <br>
+            Sourced on
+            <a href='https://github.com/mglobel/mglobel'>Github</a>
+          </small>
+        </footer>
+      </div>
+    </div>
+    <script>
+      new Vue({
+        el: '#app',
+        data: {
+          displayForm: 'none'
+        },
+        ready: function() {
+          if(window.location.hash == '#contact-form') {
+            this.$set('displayForm', 'block')
+          }
+          document.addEventListener("keydown", (e) => {
+            if (e.keyCode == 27) {
+              this.$set('displayForm', 'none')
+            }
+          });
+        },
+        methods: {
+          openModal: function () {
+            this.$set('displayForm', 'block')
+          },
+          closeModal: function (e) {
+            if (e.target.className == 'modal-background') {
+              this.$set('displayForm', 'none')
+            }
+          }
+        }
+      })
+    </script>
+  </body>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    
+    ga('create', 'UA-51053101-2', 'auto');
+    ga('send', 'pageview');
+  </script>
+</html>
